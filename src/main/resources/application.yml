@@ -1,0 +1,58 @@
+app:
+  frontend:
+    index-path: "/index.html"
+  cache:
+    eviction:
+      interval:
+        millis: 300000 # 5 minutes
+
+spring:
+  profiles:
+    active: production
+  datasource:
+    url: "jdbc:h2:file:./data/db"
+    username: "sa"
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+  main:
+    banner-mode: off
+    allow-bean-definition-overriding: true
+  shell:
+    command:
+      clear:
+        enabled: false
+      quit:
+        enabled: false
+      exit:
+        enabled: false
+      version:
+        enabled: false
+    interactive:
+      enabled: true
+    jline:
+      terminal: jansi
+    history:
+      enabled: true
+      name: "./logs/shell-history.log"
+  output:
+    ansi:
+      enabled: DETECT
+
+logging:
+  pattern:
+    console: "[%d{HH:mm:ss}] [%thread/%level] [%logger]: %msg%n"
+    file: "[%d{yyyy-MM-dd HH:mm:ss}] [%thread/%level] [%logger]: %msg%n"
+  level:
+    root: INFO
+    org.springframework: ERROR
+    org.hibernate: ERROR
+    org.apache: ERROR
+    org.flywaydb: ERROR
+    com.zaxxer: ERROR
+    org.jline: ERROR
+    com.ij11.chatbot: INFO

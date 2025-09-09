@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Move JAR" type="BatchConfigurationType" factoryName="Batch" folderName="deploy">
+    <module name="xami" />
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <option name="PARENT_ENVS" value="true" />
+    <option name="SCRIPT_NAME" value="./dev/lifecycle/deployJar.bat" />
+    <option name="PARAMETERS" value="/* where you run want to run it from (full path) */" />
+    <method v="2" />
+  </configuration>
+</component>

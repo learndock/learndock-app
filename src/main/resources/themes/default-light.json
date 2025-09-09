@@ -1,0 +1,17 @@
+{
+  "identifier": "default-light",
+  "name": "Light",
+  "description": "Default (built-in) light theme.",
+  "theme": {
+    "color-background": "#ffffff",
+    "color-cards": "#f3f4f6",
+    "color-borders": "#d1d5db",
+    "color-accent": "#0ea5e9",
+    "color-text-primary": "#1f2937",
+    "color-text-secondary": "#4b5563",
+    "color-text-muted": "#9ca3af",
+    "color-error": "#dc2626",
+    "color-warning": "#facc15",
+    "color-success": "#10b981"
+  }
+}

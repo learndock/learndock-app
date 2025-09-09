@@ -1,0 +1,55 @@
+package com.learndock.learndock.core.configurations;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
+public class ConfigEntry<T> implements ConfigEntryAccessor<T> {
+    private final Class<T> type;
+    private final T defaultValue;
+    private final String description;
+
+    @SuppressWarnings("unchecked")
+    public static <T> T parseValue(String rawValue, Class<?> type, Object defaultValue) {
+        if (rawValue == null) return (T) defaultValue;
+        try {
+            if (type == String.class) return (T) rawValue;
+            if (type == Integer.class) return (T) Integer.valueOf(rawValue);
+            if (type == Boolean.class) return (T) Boolean.valueOf(rawValue);
+            if (type == Double.class) return (T) Double.valueOf(rawValue);
+
+            ObjectMapper objectMapper = new ObjectMapper();
+            return objectMapper.readValue(rawValue, objectMapper.constructType(type));
+        } catch (Exception e) {
+            return (T) defaultValue;
+        }
+    }
+
+    @Override
+    public T get() {
+        return defaultValue;
+    }
+
+    @Override
+    public Class<T> getType() {
+        return type;
+    }
+
+    @Override
+    public T getDefaultValue() {
+        return defaultValue;
+    }
+
+    @Override
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public String toString() {
+        return get().toString();
+    }
+}
+
