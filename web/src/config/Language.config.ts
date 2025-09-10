@@ -25,7 +25,6 @@ export const LanguageKey = {
     NAVBAR_MENU: "navbar.menu",
     NAVBAR_NOTIFICATIONS: "navbar.notifications",
     NAVBAR_APPS: "navbar.apps",
-    NAVBAR_SEARCH_PLACEHOLDER: "navbar.search.placeholder",
     NAVBAR_DROPDOWN_PROFILE: "navbar.dropdown.profile",
     NAVBAR_DROPDOWN_LANGUAGE: "navbar.dropdown.language",
     NAVBAR_DROPDOWN_THEME: "navbar.dropdown.theme",
@@ -38,7 +37,7 @@ export const LanguageKey = {
     NAVBAR_SELECT_MORE: "navbar.select.more",
 
     SIDEBAR_HOME: "sidebar.home",
-    SIDEBAR_DISCOVER: "sidebar.discover",
+    SIDEBAR_CATALOGS: "sidebar.catalogs",
     SIDEBAR_SAVED: "sidebar.saved",
     SIDEBAR_HISTORY: "sidebar.history",
 
@@ -51,11 +50,31 @@ export const LanguageKey = {
     NOTIFICATION_MARK_AS_READ: "notification.mark_as_read",
     NOTIFICATION_DELETE: "notification.delete",
 
-
     HOMEPAGE_WELCOME: "Welcome to LearnDock!",
-    COMMON_SEE_MORE: "See more",
+
+    COMMON_SEE_MORE: "common.see.more",
+    COMMON_SEARCH_PLACEHOLDER: "common.search.placeholder",
+    COMMON_ADD: "common.add",
+
+    CATALOG_OVERVIEW_TITLE: "catalog.overview.title",
+    CATALOG_OVERVIEW_SHORT_DESCRIPTION: "catalog.overview.short_description",
+    CATALOG_NO_CATALOGS: "catalog.no_catalogs",
 
 
+    CATALOG_DETAIL_NOT_FOUND: "catalog.detail.not_found",
+    CATALOG_DETAIL_NO_DESCRIPTION: "catalog.detail.no_description",
+    CATALOG_DETAIL_CREATED_AT: "catalog.detail.created_at",
+    CATALOG_DETAIL_UPDATED_AT: "catalog.detail.updated_at",
+    CATALOG_DETAIL_EDIT: "catalog.detail.edit",
+    CATALOG_DETAIL_QUESTION_SETS: "catalog.detail.question_sets",
+    CATALOG_DETAIL_NO_QUESTION_SETS: "catalog.detail.no_question_sets",
+    CATALOG_DETAIL_VIEW_QUESTION_SET: "catalog.detail.view_question_set",
+    CATALOG_DETAIL_QUESTION_SET_TITLE: "catalog.detail.question_set_title",
+    CATALOG_DETAIL_LOCATION: "catalog.detail.location",
+    CATALOG_DETAIL_FIELDS: "catalog.detail.fields",
+
+    COMMON_BACK: "common.back",
+    COMMON_UNKNOWN: "common.unknown",
 } as const;
 
 export type LanguageKeyType = keyof typeof LanguageKey;

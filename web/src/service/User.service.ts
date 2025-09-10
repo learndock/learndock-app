@@ -7,6 +7,7 @@ export const getSelf = async (): Promise<User> => FetchWrapper.get<User>("/api/u
 /////////////
 /// ROLES ///
 /////////////
+// To query available roles, you can use the UserRole type
 export const getUserRoles = async (): Promise<UserRole[]> => FetchWrapper.get<UserRole[]>("/api/users/roles");
 export const addUserRole = async (request: ChangeRoleRequest): Promise<void> => FetchWrapper.post<void>("/api/users/roles/add", request);
 export const removeUserRole = async (request: ChangeRoleRequest): Promise<void> => FetchWrapper.post<void>("/api/users/roles/remove", request);

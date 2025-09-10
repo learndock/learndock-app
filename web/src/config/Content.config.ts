@@ -1,0 +1,1 @@
+export const FIAusbVLink = "https://www.gesetze-im-internet.de/fiausbv/"

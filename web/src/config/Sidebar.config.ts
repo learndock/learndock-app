@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import { FaHome, FaBookmark, FaHistory, FaCompass } from "react-icons/fa";
+import { FaBookmark, FaBookOpen, FaHistory, FaHome } from "react-icons/fa";
 import { LanguageKeyType } from "./Language.config";
 
 export const sidebarItems: {
@@ -8,7 +8,7 @@ export const sidebarItems: {
     to: string;
 }[] = [
     { icon: FaHome, label: "SIDEBAR_HOME", to: "/" },
-    { icon: FaCompass, label: "SIDEBAR_DISCOVER", to: "/discover" },
+    { icon: FaBookOpen, label: "SIDEBAR_CATALOGS", to: "/catalog" },
     { icon: FaBookmark, label: "SIDEBAR_SAVED", to: "/saved" },
     { icon: FaHistory, label: "SIDEBAR_HISTORY", to: "/history" }
 ];

@@ -1,13 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { QueryClient, QueryClientProvider } from 'react-query'
-import App from './components/App'
-import NoApiConnectionPage from './components/pages/error/NoApiConnectionPage'
 import { hasAPIConnection, printEnvironmentInfo, printUserInfo } from './core/Environment'
 import fetchTranslations from './core/LanguageLoader'
 import applyTheme from './core/ThemeLoader'
 import './index.css'
 import { FetchWrapper } from './core/FetchWrapper'
+import App from './App'
+import NoApiConnectionPage from './pages/error/NoApiConnectionPage'
 
 const queryClient = new QueryClient({
     defaultOptions: {

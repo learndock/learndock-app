@@ -57,7 +57,7 @@ const NavbarSearch: React.FC = () => {
         onFocus={() => {
           if (results.length > 0) setShowResults(true);
         }}
-        placeholder={lang('NAVBAR_SEARCH_PLACEHOLDER')}
+        placeholder={lang('COMMON_SEARCH_PLACEHOLDER')}
       />
 
       {search && showResults && topResults.length > 0 && (

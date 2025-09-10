@@ -1,5 +1,6 @@
 import { FiLoader } from "react-icons/fi";
-import { useLang } from "../../hooks/Language.hooks.ts";
+import { useLang } from "../hooks/Language.hooks";
+
 
 export default function HomePage() {
     const lang = useLang();

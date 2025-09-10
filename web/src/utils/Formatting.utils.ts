@@ -1,6 +1,9 @@
-export const formatDate = (isoString: string): string => {
+export const formatDateFromIsoString = (isoString: string): string => {
     if(!isoString) return "-";
-    const date = new Date(isoString);
+    return formatDate(new Date(isoString));
+};
+
+export const formatDate = (date: Date): string => {
     return date.toLocaleDateString("de-DE", {
         day: "2-digit",
         month: "2-digit",

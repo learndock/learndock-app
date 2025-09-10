@@ -1,5 +1,5 @@
 package com.learndock.learndock.domain.models.users;
 
 public enum UserRole {
-    SUPPORT, TECHNICAL, MANAGER
+    MANAGE_CATALOGS, MANAGE_QUESTION_SETS, MANAGE_USERS
 }

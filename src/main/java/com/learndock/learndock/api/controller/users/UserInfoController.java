@@ -26,7 +26,7 @@ public class UserInfoController {
         return ResponseEntity.ok(new UserDto(user));
     }
 
-    @Roles({UserRole.MANAGER})
+    @Roles({UserRole.MANAGE_USERS})
     @GetMapping("/getUsers")
     public List<UserDto> getUsers() {
         return userInfoService.getAllUsers();

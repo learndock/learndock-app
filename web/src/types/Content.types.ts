@@ -1,38 +1,22 @@
-export type DetailKV = { label: string; value: string };
-
-export type ContentDetails = {
-  poster?: string;
+export interface Catalog {
+  id: number;
   title: string;
-  subtitle: string;
-  description: string;
-  userRating?: number; 
-  details: DetailKV[];
-  actions: {
-    isSaved?: boolean;
-    isSubscribed?: boolean;
-    isContinue?: boolean;
-  };
-  episodes: Episode[];
-  related?: RelatedItem[];
-  externalLinks?: ExternalLink[];
-};
-
-export type Episode = {
-  id: string | number;
-  season?: number;
-  number: number;
-  title: string;
-  duration?: string; // e.g. "24m"
-  progress?: number; // 0..1
-  thumbnail?: string;
   description?: string;
-};
+  createdAt?: string; // ISO string
+  updatedAt?: string; // ISO string
+}
 
-export type RelatedItem = {
-  id: string | number;
+export interface QuestionSetExample {
+  id: number;
+  description: string;
+  type?: string;
+}
+
+export interface QuestionSet {
+  id: number;
   title: string;
-  subtitle?: string;
-  poster?: string;
-};
-
-export type ExternalLink = { label: string; href: string };
+  relatedLearningFields?: string[];
+  locationInRegulation?: string;
+  catalog: Catalog;
+  examples: QuestionSetExample[];
+}

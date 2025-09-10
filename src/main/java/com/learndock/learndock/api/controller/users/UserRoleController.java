@@ -18,13 +18,13 @@ public class UserRoleController {
 
     private final UserRoleService userRoleService;
 
-    @Roles(UserRole.MANAGER)
+    @Roles(UserRole.MANAGE_USERS)
     @PostMapping("/add")
     public void addRole(@RequestBody ChangeRoleRequest roleRequest) {
         userRoleService.addRole(roleRequest.getUsername(), roleRequest.getRole());
     }
 
-    @Roles(UserRole.MANAGER)
+    @Roles(UserRole.MANAGE_USERS)
     @PostMapping("/remove")
     public void removeRole(@RequestBody ChangeRoleRequest roleRequest) {
         userRoleService.removeRole(roleRequest.getUsername(), roleRequest.getRole());

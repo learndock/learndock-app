@@ -50,7 +50,7 @@ export async function printUserInfo() {
 export async function hasAPIConnection(): Promise<boolean> {
     try {
         GLOBAL.connection = (await ping()).status != null;
-    } catch (error) {
+    } catch {
         GLOBAL.connection = false;
     }
 

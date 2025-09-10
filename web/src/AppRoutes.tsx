@@ -1,10 +1,12 @@
 import { Route, Routes } from "react-router";
 import { useState } from "react";
+import { getStorageValue, setStorageValue } from "./storage/StorageProvider";
+import Sidebar from "./components/custom/Sidebar/Sidebar";
+import Navbar from "./components/custom/Navbar/Navbar";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/lib/NotFoundPage";
-import Navbar from "./custom/Navbar/Navbar";
-import Sidebar from "./custom/Sidebar/Sidebar";
-import { getStorageValue, setStorageValue } from "../storage/StorageProvider.ts";
+import CatalogOverviewPage from "./pages/CatalogOverview.page";
+import CatalogDetailPage from "./pages/CatalogDetail.page";
 
 export default function AppRoutes() {
     const [sidebarLocked, setSidebarLocked] = useState<boolean>(getStorageValue("sidebarLocked") as boolean);
@@ -24,6 +26,8 @@ export default function AppRoutes() {
                     <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="*" element={<NotFoundPage />} />
+                        <Route path="/catalog" element={<CatalogOverviewPage />} />
+                        <Route path="/catalog/:catalogIdParam" element={<CatalogDetailPage />} />
                     </Routes>
                 </main>
             </div>

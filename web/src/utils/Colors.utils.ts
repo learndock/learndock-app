@@ -3,7 +3,7 @@ import convert from "color-convert";
 /**
  * Parses a CSS color string into RGB.
  */
-function parseColorToRgb(color: string): [number, number, number] {
+export function parseColorToRgb(color: string): [number, number, number] {
   // Try hex
   if (color.startsWith("#")) {
     return convert.hex.rgb(color.replace("#", ""));
@@ -21,6 +21,33 @@ function parseColorToRgb(color: string): [number, number, number] {
   if (named) return named;
 
   throw new Error(`Unsupported color format: ${color}`);
+}
+
+/**
+ * Converts RGB values or a CSS color string to a hex color string.
+ * @param r Red (0-255) or color string
+ * @param g Green (0-255)
+ * @param b Blue (0-255)
+ * @returns Hex color string (e.g. "#ff00aa")
+ */
+export function rgbToHex(r: number, g: number, b: number): string;
+export function rgbToHex(color: string): string;
+export function rgbToHex(rOrColor: number | string, g?: number, b?: number): string {
+  let rgb: [number, number, number];
+  if (typeof rOrColor === "string") {
+    rgb = parseColorToRgb(rOrColor);
+  } else {
+    rgb = [rOrColor, g as number, b as number];
+  }
+  return (
+    "#" +
+    rgb
+      .map((x) => {
+        const hex = x.toString(16);
+        return hex.length === 1 ? "0" + hex : hex;
+      })
+      .join("")
+  );
 }
 
 /**
@@ -55,4 +82,8 @@ export function darkenColor(color: string, percent: number): string {
 export function setOpacity(color: string, alpha: number): string {
   const rgb = parseColorToRgb(color);
   return `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, ${Math.max(0, Math.min(1, alpha))})`;
+}
+
+export function getThemeValue(property: string): string {
+  return getComputedStyle(document.documentElement).getPropertyValue(property).trim();
 }
