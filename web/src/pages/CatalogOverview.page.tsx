@@ -6,24 +6,18 @@ import CatalogCard from "../components/custom/Content/Catalog/CatalogCard";
 import ActionButton from "../components/lib/Buttons/Action.Button";
 import SearchBar from "../components/lib/Form/SearchBar";
 import { useLang } from "../hooks/Language.hooks";
+import { useUser } from "../hooks/User.hooks";
 import { getCatalogList } from "../service/content/Catalog.service";
-import { getSelf } from "../service/User.service";
-import { useIsAuthenticated } from "../hooks/Auth.hooks";
 
 
 export default function CatalogOverviewPage() {
     const lang = useLang();
-    const { isAuthenticated } = useIsAuthenticated();
 
     const { data: catalogs, isLoading } = useQuery("catalogs", () => {
         return getCatalogList();
     });
 
-    const { data: user, isLoading: isUserLoading } = useQuery("user", () => {
-        return getSelf();
-    }, {
-        enabled: isAuthenticated
-    });
+    const { user, isUserLoading } = useUser();
 
     const [searchInput, setSearchInput] = useState("");
     const [filteredCatalogs, setFilteredCatalogs] = useState(catalogs);
@@ -57,6 +51,7 @@ export default function CatalogOverviewPage() {
                 <div className="w-full flex items-center">
                     <div className="w-full">
                         <SearchBar
+                            key={"catalog-search"}
                             id="catalog-search"
                             value={searchInput}
                             onChange={(e) => {

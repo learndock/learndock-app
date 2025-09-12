@@ -4,8 +4,10 @@ import {
     markUserNotificationAsSeen,
     deleteUserNotification,
     markAllUserNotificationsAsSeen,
+    getSelf,
 } from "../service/User.service";
 import { UserNotification } from "../types/User.types";
+import { useIsAuthenticated } from "./Auth.hooks";
 
 /**
  * Fetches all notifications and related data for the authenticated user.
@@ -45,3 +47,16 @@ export const useNotifications = (enableQuery: boolean) => {
         deleteNotification,
     };
 };
+
+export const useUser = () => {
+    const { isAuthenticated } = useIsAuthenticated();
+
+    const { data: user, isLoading: isUserLoading } = useQuery("user", getSelf, {
+        enabled: isAuthenticated
+    });
+
+    return {
+        user,
+        isUserLoading
+    };
+}

@@ -14,7 +14,7 @@ public class ServerUserConfig {
     public static ConfigEntry<Integer> WEBSERVER_PORT =
             new ConfigEntry<>(
                     Integer.class,
-                    7465,
+                    7777,
                     "The port the webserver should be served on");
 
     @ConfigProperty("security.secret_key")

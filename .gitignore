@@ -8,6 +8,8 @@ target/
 /logs/
 /config/
 /modules/
+/dev/content/node_modules/
+/dev/content/output/
 
 ### STS ###
 .apt_generated

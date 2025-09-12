@@ -2,18 +2,15 @@ package com.learndock.learndock.commands.api;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.learndock.learndock.domain.models.content.Catalog;
-import com.learndock.learndock.domain.models.content.QuestionSet;
-import com.learndock.learndock.domain.models.content.QuestionSetExample;
-import com.learndock.learndock.service.content.CatalogNotFoundException;
-import com.learndock.learndock.service.content.CatalogService;
-import com.learndock.learndock.service.content.QuestionSetService;
+import com.learndock.learndock.domain.models.content.*;
+import com.learndock.learndock.service.content.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 
 import java.io.InputStream;
 import java.util.List;
+import java.util.Map;
 
 @ShellComponent
 @RequiredArgsConstructor
@@ -23,6 +20,17 @@ public class ContentCommands {
 
     private final CatalogService catalogService;
     private final QuestionSetService questionSetService;
+    private final TopicService topicService;
+    private final CompetenceService competenceService;
+
+    @ShellMethod(key = "import-all", value = "Import catalogs, question sets, topics and competences")
+    public String importAll() {
+        importCatalogs();
+        importQuestionSets();
+        importTopics();
+        importCompetences();
+        return "Import completed.";
+    }
 
     @ShellMethod(key = "import-catalogs", value = "Import default catalogs from JSON file")
     public String importCatalogs() {
@@ -72,6 +80,71 @@ public class ContentCommands {
             return "Error importing question sets: " + e.getMessage();
         }
     }
+
+    @ShellMethod(key = "import-topics", value = "Import topics from JSON file")
+    public String importTopics() {
+        try (InputStream is = getClass().getResourceAsStream("/dev/topics.json")) {
+            List<Map<String, Object>> dtos = objectMapper.readValue(is, new TypeReference<>() {
+            });
+            int imported = 0;
+            for (Map<String, Object> dto : dtos) {
+                String title = (String) dto.get("title");
+                Long questionSetId = ((Number) dto.get("questionSetId")).longValue();
+                var qsOpt = questionSetService.getById(questionSetId);
+                if (qsOpt.isEmpty()) {
+                    System.err.println("QuestionSet not found for id: " + questionSetId + ", skipping topic: " + title);
+                    continue;
+                }
+                Topic topic = new Topic();
+                topic.setTitle(title);
+                topic.setQuestionSet(qsOpt.get());
+                topicService.create(topic);
+                imported++;
+            }
+            return "Imported " + imported + " topics.";
+        } catch (Exception e) {
+            return "Error importing topics: " + e.getMessage();
+        }
+    }
+
+    @ShellMethod(key = "import-competences", value = "Import competences from JSON file")
+    public String importCompetences() {
+        try (InputStream is = getClass().getResourceAsStream("/dev/competences.json")) {
+            List<Map<String, Object>> dtos = objectMapper.readValue(is, new TypeReference<>() {
+            });
+            int imported = 0;
+            for (Map<String, Object> dto : dtos) {
+                String title = (String) dto.get("title");
+                String desc = (String) dto.get("description");
+                List<Number> topicIds = (List<Number>) dto.get("topicIds");
+                List<Topic> topics = new java.util.ArrayList<>();
+                boolean allFound = true;
+                for (Number id : topicIds) {
+                    var topicOpt = topicService.getById(id.longValue());
+                    if (topicOpt.isEmpty()) {
+                        System.err.println("Topic not found for id: " + id + ", skipping competence: " + title);
+                        allFound = false;
+                        break;
+                    }
+                    topics.add(topicOpt.get());
+                }
+                if (!allFound) continue;
+                Competence competence = new Competence();
+                competence.setTitle(title);
+                if (desc != null) {
+                    competence.setDescription(desc);
+                }
+                competence.setTopics(topics);
+                // Save competence (implement create in your service)
+                competenceService.create(competence);
+                imported++;
+            }
+            return "Imported " + imported + " competences.";
+        } catch (Exception e) {
+            return "Error importing competences: " + e.getMessage();
+        }
+    }
+
 
     private record ExampleImportDto(String text, String type) {
     }

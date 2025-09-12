@@ -1,0 +1,1008 @@
+[
+  {
+    "title": "Berufsausbildung sowie Arbeits- und Tarifrecht",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Rechte und Pflichten des Auszubildenden und des Ausbildenden",
+        "competences": [
+          {
+            "title": "Inhalte des Ausbildungsvertrages (§ 10 f. BBiG): Vertragspartner, Beginn und Dauer der Ausbildung, sachliche und zeitliche Gliederung der Berufsausbildung, Dauer der täglichen Arbeitszeit, Probezeit, Vergütungs- und Urlaubsregelungen, Kündigungsbedingungen, Folgen bei Nichteinhaltung der Rechte und Pflichten, Geltungsbereich, Beendigung, Prüfungen, Abschluss",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Vorteile der Ausbildung im dualen System der Berufsbildung",
+        "competences": [
+          {
+            "title": "Unterschiedliche Lernorte, auf regionaler Ebene",
+            "description": ""
+          },
+          {
+            "title": "Zusammenwirken von Betrieb und Berufsschule, z.B. Absprachen, Arbeitskreise, Abstimmung des Zeitpunkts der Vermittlung der Inhalte",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Aufgaben von Ausbildungsbetrieb, Berufsschule und Kammern im Rahmen der Berufsausbildung",
+        "competences": [
+          {
+            "title": "Ausbildungsvertrag",
+            "description": ""
+          },
+          {
+            "title": "Bereitstellung von Arbeitsmaterialien",
+            "description": ""
+          },
+          {
+            "title": "Berufsbildungsgesetz",
+            "description": ""
+          },
+          {
+            "title": "Berufsschulpflicht",
+            "description": ""
+          },
+          {
+            "title": "Berufsschulzeiten",
+            "description": ""
+          },
+          {
+            "title": "Freistellung zur Prüfung",
+            "description": ""
+          },
+          {
+            "title": "Regelungstatbestände in Ausbildungsordnung",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Ausbildungsrahmenplan, sachliche und zeitliche Gliederung",
+        "competences": [
+          {
+            "title": "Betrieblicher Ausbildungsplan",
+            "description": ""
+          },
+          {
+            "title": "Einsatz- und Versetzungsplan im Betrieb",
+            "description": ""
+          },
+          {
+            "title": "Rahmenlehrplan",
+            "description": ""
+          },
+          {
+            "title": "Rahmenplan für die berufsschulische Ausbildung",
+            "description": ""
+          },
+          {
+            "title": "Zuordnung der Lernziele des Ausbildungsrahmenplans zu den Inhalten des betrieblichen Ausbildungsplans, unter Berücksichtigung betrieblicher Besonderheiten",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Grundsätze des Individual- und Kollektivarbeitsrechtes",
+        "competences": [
+          {
+            "title": "Kenntnis der Arbeitnehmerrechte und -pflichten im Betrieb",
+            "description": ""
+          },
+          {
+            "title": "Kenntnis der wesentlichen Bestimmungen aus den relevanten Rechtsgebieten: Berufsbildungsgesetz, Arbeitsschutzgesetz, Bundeselterngesetz, Allgemeines Gleichbehandlungsgesetz, Kündigungsschutzgesetz, Jugendarbeitsschutzgesetz, Arbeitsstättenverordnung, Arbeitszeitgesetz, Betriebsverfassungsgesetz, Betriebsvereinbarungen (z.B. betriebliche Arbeitszeitregelung, betriebliches Beurteilungsverfahren), Sozialversicherung, Lohnsteuer, Mutterschutzgesetz, Schwerbehindertengesetz",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Arbeitgeberorganisationen",
+        "competences": [
+          {
+            "title": "Arbeitgeberverbände",
+            "description": ""
+          },
+          {
+            "title": "Industrie- und Handelskammern",
+            "description": ""
+          },
+          {
+            "title": "Wirtschaftsverbände",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Arbeitnehmerorganisationen",
+        "competences": [
+          {
+            "title": "Betriebsräte",
+            "description": ""
+          },
+          {
+            "title": "Betriebsversammlung",
+            "description": ""
+          },
+          {
+            "title": "Einigungsstelle",
+            "description": ""
+          },
+          {
+            "title": "Gewerkschaften",
+            "description": ""
+          },
+          {
+            "title": "Jugend- und Auszubildendenvertretung",
+            "description": ""
+          },
+          {
+            "title": "Mitbestimmungs- und Mitwirkungsrechte",
+            "description": ""
+          },
+          {
+            "title": "Wahl und Zusammensetzung",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Tarifrecht",
+        "competences": [
+          {
+            "title": "Geltungsbereich",
+            "description": ""
+          },
+          {
+            "title": "Laufzeit",
+            "description": ""
+          },
+          {
+            "title": "Schlichtung",
+            "description": ""
+          },
+          {
+            "title": "Tarifautonomie",
+            "description": ""
+          },
+          {
+            "title": "Tarifbindung",
+            "description": ""
+          },
+          {
+            "title": "Tarifkonflikt (Arbeitskampf)",
+            "description": ""
+          },
+          {
+            "title": "Tarifverhandlung",
+            "description": ""
+          },
+          {
+            "title": "Tarifverträge",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Lohn- und Gehaltsformen",
+        "competences": [
+          {
+            "title": "Brutto/Netto",
+            "description": ""
+          },
+          {
+            "title": "Lohnsteuer, Kirchensteuer",
+            "description": ""
+          },
+          {
+            "title": "Sozialabgaben",
+            "description": ""
+          },
+          {
+            "title": "Vermögenswirksame Leistungen",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Lebensbegleitendes Lernen",
+        "competences": [
+          {
+            "title": "Berufliche Fortbildung und Umschulung",
+            "description": ""
+          },
+          {
+            "title": "Innerbetriebliche Fortbildung",
+            "description": ""
+          },
+          {
+            "title": "Regelungen und Möglichkeiten für interne und externe Weiterbildung in Betrieb und Branche, evtl. tarifvertragliche Regelungen",
+            "description": ""
+          },
+          {
+            "title": "Staatliche Fördermaßnahmen",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Lerntechniken",
+        "competences": [
+          {
+            "title": "Auditives Lernen, z.B. Lerngruppen bilden, Vorträge anhören, Lerninhalte aufnehmen und abspielen",
+            "description": ""
+          },
+          {
+            "title": "Kommunikatives Lernen, z.B. Dialoge, Diskussionen, Lerngruppen, Frage-Antwort-Spiele",
+            "description": ""
+          },
+          {
+            "title": "Motorisches Lernen, z.B. ‚Learning by Doing', Rollenspiele, Gruppenaktivitäten",
+            "description": ""
+          },
+          {
+            "title": "Visuelles Lernen, z.B. Lernposter mit Mindmaps, Schaubilder, Grafiken erstellen, Videos ansehen, eigene Zusammenfassungen und Lernkarteien schreiben",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Arbeitstechniken",
+        "competences": [
+          {
+            "title": "Arbeitsplanung- und Projektplanungstechniken",
+            "description": ""
+          },
+          {
+            "title": "Beschaffung, Auswahl und Auswertung von Fachinformationen",
+            "description": ""
+          },
+          {
+            "title": "Digitale Lernmedien nutzen und individuell bewerten, z.B. Internet, Apps, Plattformen (Kommunikation, Information, Videos, Austausch), Netzwerke, Computer Based Training (CBT), Web Based Training (WBT), Umgang mit mobilen Endgeräten",
+            "description": ""
+          },
+          {
+            "title": "Gestaltung eines lernförderlichen und das Lernen integrierenden Arbeitsplatzes",
+            "description": ""
+          },
+          {
+            "title": "Moderations- und Präsentationstechniken",
+            "description": ""
+          },
+          {
+            "title": "Verschiedene Arbeitstechniken erlernen",
+            "description": ""
+          },
+          {
+            "title": "Zeitmanagementtechniken",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Berufliche Fortbildung und Umschulung",
+        "competences": [
+          {
+            "title": "Anpassungsfortbildung",
+            "description": ""
+          },
+          {
+            "title": "Aufstiegsfortbildung",
+            "description": ""
+          },
+          {
+            "title": "Erhaltungsfortbildung",
+            "description": ""
+          },
+          {
+            "title": "Innerbetriebliche Fortbildung",
+            "description": ""
+          },
+          {
+            "title": "Staatliche Fördermaßnahmen",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Lebensplanung",
+        "competences": [
+          {
+            "title": "Auslandsaufenthalte, z.B. mithilfe von EU-Förderprogrammen",
+            "description": ""
+          },
+          {
+            "title": "Bildungseinrichtungen",
+            "description": ""
+          },
+          {
+            "title": "Entwicklung bezüglich Eigenständigkeit, Verantwortung, Reflexivität, Lernkompetenz, Team- und Führungsfähigkeit, Mitgestaltung, Kommunikation",
+            "description": ""
+          },
+          {
+            "title": "Europass",
+            "description": ""
+          },
+          {
+            "title": "Europäische Sozialcharta",
+            "description": ""
+          },
+          {
+            "title": "Karriereplanung",
+            "description": ""
+          },
+          {
+            "title": "Mobilitätsprogramme",
+            "description": ""
+          },
+          {
+            "title": "Möglichkeiten und Grenzen einer Existenzgründung",
+            "description": ""
+          },
+          {
+            "title": "Persönliche Weiterbildung, z.B. Studium von Fachliteratur, Selbstlernmaterialien, Fachmessen",
+            "description": ""
+          },
+          {
+            "title": "Potenzialanalyse",
+            "description": ""
+          },
+          {
+            "title": "Regelungen und Möglichkeiten für interne und externe Weiterbildung in Betrieb und Branche, evtl. tarifvertragliche Regelungen",
+            "description": ""
+          },
+          {
+            "title": "Überbetriebliche Fortbildung",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Aufbau und Organisation des Ausbildungsbetriebes",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Der Betrieb",
+        "competences": [
+          {
+            "title": "Branchenzugehörigkeit",
+            "description": ""
+          },
+          {
+            "title": "Gesamtwirtschaft, z.B. primärer, sekundärer, tertiärer Sektor, erwerbswirtschaftliche Betriebe",
+            "description": ""
+          },
+          {
+            "title": "Produktpalette und Märkte",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Rechtsformen",
+        "competences": [
+          {
+            "title": "Gemeinnützige Organisationen",
+            "description": ""
+          },
+          {
+            "title": "Gesellschaft bürgerlichen Rechts",
+            "description": ""
+          },
+          {
+            "title": "Kapitalgesellschaften, z.B. GmbH, AG",
+            "description": ""
+          },
+          {
+            "title": "Personengesellschaften, z.B. Einzelunternehmung, KG, OHG, GmbH & Co. KG",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Unternehmensstruktur und Organisationsform",
+        "competences": [
+          {
+            "title": "Arbeitsabläufe",
+            "description": ""
+          },
+          {
+            "title": "Aufgabenteilung",
+            "description": ""
+          },
+          {
+            "title": "Einlinien- bzw. Mehrlinien-, Stab-Liniensystem",
+            "description": ""
+          },
+          {
+            "title": "Matrixorganisation",
+            "description": ""
+          },
+          {
+            "title": "Spartenorganisation",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Wirtschaftliche Verflechtungen",
+        "competences": [
+          {
+            "title": "Fusion",
+            "description": ""
+          },
+          {
+            "title": "Kartell",
+            "description": ""
+          },
+          {
+            "title": "Konzern",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Ziele von Betrieben und Unternehmen",
+        "competences": [
+          {
+            "title": "Produktivität",
+            "description": ""
+          },
+          {
+            "title": "Rentabilität",
+            "description": ""
+          },
+          {
+            "title": "Wirtschaftlichkeit",
+            "description": ""
+          },
+          {
+            "title": "Zielkonflikte",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Betriebliche und gesamtwirtschaftliche Arbeitsteilung",
+        "competences": [
+          {
+            "title": "Globalisierung",
+            "description": ""
+          },
+          {
+            "title": "Möglichkeiten und Grenzen der Sozialen Marktwirtschaft",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Ziele und Aufgaben von Arbeitgeber- und Arbeitnehmerverbänden",
+        "competences": [
+          {
+            "title": "Berufsständische Vertretungen und Organisationen",
+            "description": ""
+          },
+          {
+            "title": "Branchenspezifische Gewerkschaften und Arbeitgeberverbände",
+            "description": ""
+          },
+          {
+            "title": "Ehrenamtliche Mitwirkung, z.B. Prüfungsausschuss",
+            "description": ""
+          },
+          {
+            "title": "Wirtschaftsorganisationen",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Ziele und Aufgaben von Behörden und Verwaltungen",
+        "competences": [
+          {
+            "title": "KEIN THEMENKREIS ANGEGEBEN",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Grundsatz der vertrauensvollen Zusammenarbeit zwischen Arbeitgeber- und Arbeitnehmervertretern",
+        "competences": [
+          {
+            "title": "Betriebsrat",
+            "description": ""
+          },
+          {
+            "title": "Betriebsvereinbarungen bzw. Personalvertretung auf Grundlage des Personalvertretungsgesetzes",
+            "description": ""
+          },
+          {
+            "title": "Grundlage des Betriebsverfassungsgesetzes",
+            "description": ""
+          },
+          {
+            "title": "Jugend- und Auszubildendenvertreter und deren Informations-, Beratungs- und Mitbestimmungsrechte",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sicherheit und Gesundheitsschutz bei der Arbeit",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Gesundheits- und Arbeitsschutzvorschriften",
+        "competences": [
+          {
+            "title": "Arbeitsplatzergonomie",
+            "description": ""
+          },
+          {
+            "title": "Arbeitsschutzgesetz",
+            "description": ""
+          },
+          {
+            "title": "Arbeitssicherheitsgesetz",
+            "description": ""
+          },
+          {
+            "title": "Arbeitsstättenverordnung",
+            "description": ""
+          },
+          {
+            "title": "Arbeitszeitgesetz",
+            "description": ""
+          },
+          {
+            "title": "Aufsichtsbehörde für Arbeitsschutz (Gewerbeaufsicht)",
+            "description": ""
+          },
+          {
+            "title": "Betriebssicherheitsverordnung",
+            "description": ""
+          },
+          {
+            "title": "Bildschirmarbeitsplatzverordnung",
+            "description": ""
+          },
+          {
+            "title": "Jugendarbeitsschutzgesetz",
+            "description": ""
+          },
+          {
+            "title": "Unfallverhütungsvorschriften (UVV)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Gefährdungen und Beanspruchungen wahrnehmen und einschätzen",
+        "competences": [
+          {
+            "title": "Besondere Fürsorgepflicht des Arbeitgebers",
+            "description": ""
+          },
+          {
+            "title": "Ergonomisch, akustisch, psychisch",
+            "description": ""
+          },
+          {
+            "title": "Ergonomische Arbeitsplatzgestaltung",
+            "description": ""
+          },
+          {
+            "title": "Ersthelfer am Arbeitsplatz",
+            "description": ""
+          },
+          {
+            "title": "Gefahren beachten und ggf. melden",
+            "description": ""
+          },
+          {
+            "title": "Mechanisch, elektrisch, thermisch, chemisch",
+            "description": ""
+          },
+          {
+            "title": "Sicherheitshinweise, Vorschriften und Anweisungen beachten",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Vorsorgeuntersuchungen",
+        "competences": [
+          {
+            "title": "Augenuntersuchung für Bildschirmarbeitsplätze",
+            "description": ""
+          },
+          {
+            "title": "Psychische Gefährdungsbeurteilung",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Aufgaben der Sicherheitsbeauftragten",
+        "competences": [
+          {
+            "title": "KEIN THEMENKREIS ANGEGEBEN",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Vorschriften im betrieblichen und persönlichen Arbeitsablauf",
+        "competences": [
+          {
+            "title": "Allgemeine und betriebliche Verhaltensregeln",
+            "description": ""
+          },
+          {
+            "title": "Im Gebäude/am Arbeitsplatz",
+            "description": ""
+          },
+          {
+            "title": "Notausgänge (Kennzeichnung)",
+            "description": ""
+          },
+          {
+            "title": "Prüfzeichen, z.B. CE-Zeichen",
+            "description": ""
+          },
+          {
+            "title": "Sachgerechter Umgang mit Gefahrenpotenzialen",
+            "description": ""
+          },
+          {
+            "title": "Schriften, Farben und Zeichen des Arbeitsschutzes",
+            "description": ""
+          },
+          {
+            "title": "Schutzarten elektrischer Betriebsmittel",
+            "description": ""
+          },
+          {
+            "title": "Schutzklassen",
+            "description": ""
+          },
+          {
+            "title": "Wissen über Fluchtwege",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Verhaltensweisen bei Unfällen",
+        "competences": [
+          {
+            "title": "Erste-Hilfe-Maßnahmen",
+            "description": ""
+          },
+          {
+            "title": "Ersthelfer, Notruf- und Notfallnummern",
+            "description": ""
+          },
+          {
+            "title": "Evakuierung und Dokumentation",
+            "description": ""
+          },
+          {
+            "title": "Fluchtwege und Sammelplätze",
+            "description": ""
+          },
+          {
+            "title": "Meldeketten",
+            "description": ""
+          },
+          {
+            "title": "Meldepflicht von Unfällen",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Verhaltensweisen im Brandfall sowie vorbeugender Brandschutz",
+        "competences": [
+          {
+            "title": "Brandmeldung",
+            "description": ""
+          },
+          {
+            "title": "Brandschutzklassen (A, B, C, D)",
+            "description": ""
+          },
+          {
+            "title": "Brandschutzmittel: Feuerlöscher (Standort, Bedienungsanleitung, Wirkungsweise), Löschdecken",
+            "description": ""
+          },
+          {
+            "title": "Brandschutzordnung - Verhalten in Brandfällen, z.B. Verbot zur Fahrstuhlnutzung, Schließen von Türen und Fenstern im Gebäude/am Arbeitsplatz",
+            "description": ""
+          },
+          {
+            "title": "Brandursachen durch brennbare Stoffe und Hitzeentwicklung, z.B. nicht ausgeschaltete Heißwasserkocher und Kaffeemaschinen",
+            "description": ""
+          },
+          {
+            "title": "Flucht- und Rettungswege",
+            "description": ""
+          },
+          {
+            "title": "Sammelplätze",
+            "description": ""
+          },
+          {
+            "title": "Sicherheitszeichen",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Grundlagen der IT-Sicherheit kennen und umsetzen",
+        "competences": [
+          {
+            "title": "Das betriebliche IT-Sicherheitskonzept kennen und beachten",
+            "description": ""
+          },
+          {
+            "title": "Die Aufgaben des Bundesamtes für Sicherheit in der Informationstechnik (BSI) kennen",
+            "description": ""
+          },
+          {
+            "title": "Die Empfehlungen und Standards des BSI beachten und einhalten",
+            "description": ""
+          },
+          {
+            "title": "Die Verfügbarkeit, Integrität, Vertraulichkeit und Authentizität von Daten berücksichtigen",
+            "description": ""
+          },
+          {
+            "title": "Die Ziele der europäischen Datenschutz-Grundverordnung (DSGVO) kennen",
+            "description": ""
+          },
+          {
+            "title": "Die Ziele von Informationssicherheit und Datenschutz kennen und unterscheiden.",
+            "description": ""
+          },
+          {
+            "title": "Technisch organisatorische Maßnahmen (TOM) zur Gewährleistung der IT-Sicherheit kennen und umsetzen",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Umweltschutz",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Umweltbelastungen wahrnehmen und vermeiden helfen",
+        "competences": [
+          {
+            "title": "Abfalltrennung und -vermeidung",
+            "description": ""
+          },
+          {
+            "title": "Rationelle Energie- und Ressourcenverwendung, z.B. unnötige Gerätelaufzeiten vermeiden, Umgang mit Speicher- und Printmedien",
+            "description": ""
+          },
+          {
+            "title": "Spezifische Risiken der IT-Prozesse sowie von IT-beteiligten Prozessen, z.B. USV-Anlagen",
+            "description": ""
+          },
+          {
+            "title": "Wiederverwertung (Recycling)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Umgang mit Abfällen",
+        "competences": [
+          {
+            "title": "Branchenspezifische Abfälle",
+            "description": ""
+          },
+          {
+            "title": "Erfassung",
+            "description": ""
+          },
+          {
+            "title": "Lagerung und Entsorgung von z.B. Datenträgern oder Kabeln",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Öffentliche Systeme und Verordnungen/Gesetze",
+        "competences": [
+          {
+            "title": "Immissionsschutzgesetz, technische Anleitungen, z.B. zu Lärm, Luft, Abfall",
+            "description": ""
+          },
+          {
+            "title": "Teilnahme am Dualen System im Hinblick auf Verpackungsentsorgung",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Externe Auswirkungen",
+        "competences": [
+          {
+            "title": "Im Rahmen von Nachhaltigkeit sind auch Auswirkungen auf Umwelt, Pflanzen, Tiere, Lebensräume zu reflektieren",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Umweltschonende Ressourcennutzung",
+        "competences": [
+          {
+            "title": "Berücksichtigen wirtschaftlicher Nachhaltigkeit bereits bei Einkauf und Lieferantenauswahl",
+            "description": ""
+          },
+          {
+            "title": "Ressourcenverbrauch und Umweltschutz in Kombination denken, z.B. Nutzung von Strom aus regenerativen Quellen",
+            "description": ""
+          },
+          {
+            "title": "Sparsamer und effektiver Umgang mit Roh-, Hilfs- und Betriebsstoffen (ggf. erforderliche Kennzeichnung und getrennte Lagerung beachten)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Abfallvermeidung und -reduzierung",
+        "competences": [
+          {
+            "title": "KEIN THEMENKREIS ANGEGEBEN",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Rechtsfolgen bei Nichteinhaltung",
+        "competences": [
+          {
+            "title": "KEIN THEMENKREIS ANGEGEBEN",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Vernetztes Zusammenarbeiten unter Nutzung digitaler Medien",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Wertschätzende Zusammenarbeit",
+        "competences": [
+          {
+            "title": "Fähigkeit, effektiv, integer und respektvoll mit verschiedenen Teams zusammenzuarbeiten",
+            "description": ""
+          },
+          {
+            "title": "Interdisziplinarität, Interkulturalität",
+            "description": ""
+          },
+          {
+            "title": "Unternehmenswerte beachten und betriebliche Ethikregeln anwenden",
+            "description": ""
+          },
+          {
+            "title": "Übernahme gemeinsamer Verantwortung für die Zusammenarbeit und Wertschätzung der einzelnen Beiträge jedes Teammitglieds",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Informationstechnische Schutzziele bei der Kommunikation kennen und umsetzen",
+        "competences": [
+          {
+            "title": "Bei der Nutzung von Social Media die Gefahren für die IT-Sicherheit im privaten und betrieblichen Bereich kennen und beachten",
+            "description": ""
+          },
+          {
+            "title": "Die Gefahren des Social Engineering kennen und Schäden vermeiden",
+            "description": ""
+          },
+          {
+            "title": "Die Notwendigkeit zur Entwicklung eines Sicherheitsbewusstseins bei der Nutzung von IT-Technik im privaten und betrieblichen Bereich entwickeln",
+            "description": ""
+          },
+          {
+            "title": "Die möglichen (auch juristischen) Konsequenzen von Äußerungen über den eigenen Arbeitgeber in sozialen Netzwerken berücksichtigen",
+            "description": ""
+          },
+          {
+            "title": "Im Umgang mit Kommunikation und Information Zuständigkeitsabgrenzung verdeutlichen",
+            "description": ""
+          },
+          {
+            "title": "Nachrichten und Inhalte auch aus Sicht der Empfänger betrachten",
+            "description": ""
+          },
+          {
+            "title": "Reflexion von Erfahrungen in virtuellen Räumen",
+            "description": ""
+          },
+          {
+            "title": "Sensibler Umgang mit Adressatenlisten in der digitalen Kommunikation",
+            "description": ""
+          },
+          {
+            "title": "Sicherer Umgang mit dienstlichen E-Mails, kurzer, zielführender, höflicher und korrekter Informationsaustausch per E-Mail, Regeln für die richtige Net(t)ikette",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Ethische Aspekte und Compliance-Regelungen",
+        "competences": [
+          {
+            "title": "Ergänzend dazu sind auch allgemeine und betriebliche Compliance-Regelungen zu berücksichtigen",
+            "description": ""
+          },
+          {
+            "title": "Gender-Neutralität gewährleisten, aber auch z.B. das dritte Geschlecht berücksichtigen",
+            "description": ""
+          },
+          {
+            "title": "Im Rahmen von Nachhaltigkeit sind auch Auswirkungen auf alles Lebendige (Umwelt, Pflanzen, Tiere, Lebensräume) zu reflektieren.",
+            "description": ""
+          },
+          {
+            "title": "Im Zentrum ethischer Aspekte steht die Würde aller Menschen sowie deren Integrität. Diese ist für alle direkt und indirekt Betroffenen der IT-Lösungen kurz-, mittel- und langfristig zu gewährleisten.",
+            "description": ""
+          },
+          {
+            "title": "Net(t)ikette gewährleisten und unterschiedliche Perspektiven und Befindlichkeiten berücksichtigen",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]

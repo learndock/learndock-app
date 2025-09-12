@@ -1,0 +1,392 @@
+[
+  {
+    "title": "Informieren und Beraten von Kunden und Kundinnen",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Aktives Zuhören, Kommunikationsmodelle und Verkaufsgespräche (Anfrage, Angebot, Auftrag), Analyse der Kundenbedürfnisse",
+        "competences": [
+          {
+            "title": "KEIN THEMENKREIS ANGEGEBEN",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Kundenbeziehungen unter Beachtung rechtlicher Regelungen und betrieblicher Grundsätze gestalten",
+        "competences": [
+          {
+            "title": "AGB-Gesetz",
+            "description": ""
+          },
+          {
+            "title": "BGB/HGB",
+            "description": ""
+          },
+          {
+            "title": "Compliance",
+            "description": ""
+          },
+          {
+            "title": "Customer Relationship Management",
+            "description": ""
+          },
+          {
+            "title": "Gesetz gegen unlauteren Wettbewerb",
+            "description": ""
+          },
+          {
+            "title": "Regelkonformität",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Daten und Sachverhalte interpretieren, multimedial aufbereiten und situationsgerecht präsentieren",
+        "competences": [
+          {
+            "title": "Corporate Identity (CI)",
+            "description": ""
+          },
+          {
+            "title": "Grafische Darstellung (Diagrammarten, Bilderbearbeitung, Videos, multimediale Aufbereitung)",
+            "description": ""
+          },
+          {
+            "title": "Programm zum Erstellen multimedialer Inhalte",
+            "description": ""
+          },
+          {
+            "title": "Präsentationsprogramm",
+            "description": ""
+          },
+          {
+            "title": "Präsentationstechnik",
+            "description": ""
+          },
+          {
+            "title": "Tabellenkalkulation",
+            "description": ""
+          },
+          {
+            "title": "Visualisierung",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Entwickeln, Erstellen und Betreuen von IT-Lösungen",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Fehler erkennen, analysieren und beheben",
+        "competences": [
+          {
+            "title": "Debugging, Breakpoint",
+            "description": ""
+          },
+          {
+            "title": "Komponententest, Integrationstest, Systemtest",
+            "description": ""
+          },
+          {
+            "title": "Software-Test, dynamische und statische Testverfahren, z.B. Black Box, White Box, Review, Extremwertetest",
+            "description": ""
+          },
+          {
+            "title": "Testdaten",
+            "description": ""
+          },
+          {
+            "title": "Versionsmanagement des Quellcodes",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Algorithmen formulieren und Programme entwickeln",
+        "competences": [
+          {
+            "title": "Abbildung der Kontrollstrukturen mittels Aktivitätsdiagramm oder Pseudocode als didaktisches Hilfsmittel",
+            "description": ""
+          },
+          {
+            "title": "Entwurf der Bildschirmausgabemasken (Softwareergonomie, Barrierefreiheit)",
+            "description": ""
+          },
+          {
+            "title": "UML (Use-Case-, Klassendiagramm, Aktivitätsdiagramm)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Datenbanken modellieren und erstellen",
+        "competences": [
+          {
+            "title": "Abfrage über mehrere Tabellen",
+            "description": ""
+          },
+          {
+            "title": "Aggregat-Funktionen",
+            "description": ""
+          },
+          {
+            "title": "Anomalien/Redundanzen erkennen",
+            "description": ""
+          },
+          {
+            "title": "Ausdrücke und Bedingungen",
+            "description": ""
+          },
+          {
+            "title": "Datenbankabfrage, Datenpflege",
+            "description": ""
+          },
+          {
+            "title": "Datentypen: Boolesche Werte, Ganzzahl, Gleitkommawerte, Währung, Datumswerte, Texte fester und variabler Länge, BLOB, Geokoordinaten",
+            "description": ""
+          },
+          {
+            "title": "ER-Modell, Attribute, Beziehungen, Kardinalitäten, referenzielle Integrität, Aktualisierungsweitergabe, Löschweitergabe, Primärschlüssel, Fremdschlüssel",
+            "description": ""
+          },
+          {
+            "title": "Normalisieren, 1. bis 3. Normalform",
+            "description": ""
+          },
+          {
+            "title": "OpenData, API-Schnittstellen",
+            "description": ""
+          },
+          {
+            "title": "Relationale und nicht-relationale Datenbanken, NoSQL-Datenbanken",
+            "description": ""
+          },
+          {
+            "title": "SQL: Tabellenstruktur, Index, Manipulation, Projektion, Selektion, Sortieren, Gruppieren",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Durchführen und Dokumentieren von qualitätssichernden Maßnahmen",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Methoden der Qualitätslenkung anwenden",
+        "competences": [
+          {
+            "title": "Debugging, Ablaufverfolgung",
+            "description": ""
+          },
+          {
+            "title": "Software-Test, dynamische und statische Testverfahren (z.B. Black Box, White Box, Review, Extremwertetest, Testdaten, Last- und Performancetest)",
+            "description": ""
+          },
+          {
+            "title": "Verschiedene Prüfverfahren, z.B. Parität, Redundanz",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Methoden zur Messung der Zielerreichung im QM-Prozess kennen und anwenden",
+        "competences": [
+          {
+            "title": "Abnahmeprotokoll",
+            "description": ""
+          },
+          {
+            "title": "Soll-Ist-Vergleich, Abweichungen erkennen und berechnen",
+            "description": ""
+          },
+          {
+            "title": "Testdatengeneratoren",
+            "description": ""
+          },
+          {
+            "title": "Testprotokolle",
+            "description": ""
+          },
+          {
+            "title": "Verbesserungsprozess, PDCA-Zyklus, KVP, Kennzahlen",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Umsetzen, Integrieren und Prüfen von Maßnahmen zur IT-Sicherheit und zum Datenschutz",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Schadenspotenziale von IT-Sicherheitsvorfällen einschätzen und Schäden verhindern können",
+        "competences": [
+          {
+            "title": "Datenverlust",
+            "description": ""
+          },
+          {
+            "title": "Imageschaden",
+            "description": ""
+          },
+          {
+            "title": "Wirtschaftlicher Schaden",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Präventive IT-Sicherheitsmaßnahmen für verschiedene Bedrohungsszenarien planen und umsetzen",
+        "competences": [
+          {
+            "title": "Maßnahmen gegen Datendiebstahl",
+            "description": ""
+          },
+          {
+            "title": "Maßnahmen gegen Identitätsdiebstahl (Phishing)",
+            "description": ""
+          },
+          {
+            "title": "Maßnahmen gegen digitale Erpressung (Ransomware)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Ziele zur Entwicklung von IT-Sicherheitskriterien definieren",
+        "competences": [
+          {
+            "title": "Objektive Bewertung der Systeme (IT-Grundschutzmodellierung)",
+            "description": ""
+          },
+          {
+            "title": "Richtschnur für Entwickler",
+            "description": ""
+          },
+          {
+            "title": "Unterstützung von Anwendern/Benutzern bei der Auswahl eines geeigneten IT-Sicherheitsprodukts (Security by Design)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Kunden zur IT-Sicherheit beraten",
+        "competences": [
+          {
+            "title": "Bedrohungsszenarien, z.B. Man-in-the-Middle, SQL-Injection, DDoS-Attack",
+            "description": ""
+          },
+          {
+            "title": "Private Haushalte",
+            "description": ""
+          },
+          {
+            "title": "Qualitätsanforderungen",
+            "description": ""
+          },
+          {
+            "title": "Rahmenbedingungen: technologisch, organisatorisch, rechtlich, ethisch",
+            "description": ""
+          },
+          {
+            "title": "Risikoanalyse",
+            "description": ""
+          },
+          {
+            "title": "Technisch-organisatorische Maßnahmen (TOM)",
+            "description": ""
+          },
+          {
+            "title": "Unternehmen (intern, extern)",
+            "description": ""
+          },
+          {
+            "title": "Öffentliche Hand - Funktionale Anforderungen",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Verschiedene Tools zur Überprüfung von IT-Sicherheitsmaßnahmen erläutern",
+        "competences": [
+          {
+            "title": "Device Security Check",
+            "description": ""
+          },
+          {
+            "title": "Identity & Access Management",
+            "description": ""
+          },
+          {
+            "title": "Penetrations-Test",
+            "description": ""
+          },
+          {
+            "title": "Schwachstellenanalyse",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Wirksamkeit und Effizienz der umgesetzten Technisch-organisatorischen Maßnahmen (TOM) zur IT-Sicherheit und zum Datenschutz prüfen",
+        "competences": [
+          {
+            "title": "Compliance Reports",
+            "description": ""
+          },
+          {
+            "title": "Log Management",
+            "description": ""
+          },
+          {
+            "title": "Zugangskontrolle, z.B. Bildschirmschoner mit Passwortschutz, biometrische Verfahren, Magnet- oder Chipkarte",
+            "description": ""
+          },
+          {
+            "title": "Zugriffskontrolle, z.B. Verschlüsselung von Datenträgern, Löschung von Datenträgern, User/Rollenkonzept",
+            "description": ""
+          },
+          {
+            "title": "Zutrittskontrolle, z.B. Alarmanlage, Videoüberwachung, Besucherausweise",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]

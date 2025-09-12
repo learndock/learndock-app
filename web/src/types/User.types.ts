@@ -1,4 +1,4 @@
-export type UserRole = "MANAGE_CATALOGS" | "MANAGE_QUESTION_SETS" | "MANAGE_USERS";
+export type UserRole = "MANAGE_CATALOGS" | "MANAGE_QUESTION_SETS" | "MANAGE_USERS" | "DB_ADMIN" | "TECHNICAL";
 
 export interface User {
     userId: number;

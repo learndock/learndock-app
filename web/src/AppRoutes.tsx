@@ -7,6 +7,8 @@ import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/lib/NotFoundPage";
 import CatalogOverviewPage from "./pages/CatalogOverview.page";
 import CatalogDetailPage from "./pages/CatalogDetail.page";
+import TechnicalDashboard from "./pages/TechnicalDashboard.page";
+import CompetenceDetailPage from "./pages/ComptetenceDetail.page";
 
 export default function AppRoutes() {
     const [sidebarLocked, setSidebarLocked] = useState<boolean>(getStorageValue("sidebarLocked") as boolean);
@@ -26,8 +28,10 @@ export default function AppRoutes() {
                     <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="*" element={<NotFoundPage />} />
+                        <Route path="/technical" element={<TechnicalDashboard />} />
                         <Route path="/catalog" element={<CatalogOverviewPage />} />
                         <Route path="/catalog/:catalogIdParam" element={<CatalogDetailPage />} />
+                        <Route path="/competence/:competenceIdParam" element={<CompetenceDetailPage />} />
                     </Routes>
                 </main>
             </div>

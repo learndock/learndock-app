@@ -1,5 +1,6 @@
 package com.learndock.learndock.domain.models.content;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,6 +15,7 @@ import java.util.List;
 @Table(name = "topic")
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonIgnoreProperties({"questionSet"})
 public class Topic {
 
     @Id
@@ -25,4 +27,8 @@ public class Topic {
 
     @ManyToMany(mappedBy = "topics", fetch = FetchType.LAZY)
     private List<Competence> competences;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "question_set_id")
+    private QuestionSet questionSet;
 }

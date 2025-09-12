@@ -1,9 +1,10 @@
-import {useState} from "react";
-import {Modal} from "../../lib/Modals/Modal.tsx";
-import {RegisterRequest} from "../../../types/Auth.types";
-import {register} from "../../../service/Auth.service";
-import {FetchError} from "../../../core/FetchWrapper";
-import {useLang} from "../../../hooks/Language.hooks.ts";
+import { useState } from "react";
+import { FetchError } from "../../../core/FetchWrapper";
+import { useLang } from "../../../hooks/Language.hooks.ts";
+import { register } from "../../../service/Auth.service";
+import { RegisterRequest } from "../../../types/Auth.types";
+import { performLogin } from "../../../utils/Auth.utils.ts";
+import { Modal } from "../../lib/Modals/Modal.tsx";
 
 interface Props {
     isOpen: boolean;
@@ -24,6 +25,7 @@ export const RegisterModal = ({ isOpen, onClose, onSwitch }: Props) => {
         setError(null);
         try {
             await register(form);
+            await performLogin(form);
             onClose();
         } catch (error) {
             if (!(error instanceof FetchError)) return setError(lang("ERROR_UNEXPECTED"));

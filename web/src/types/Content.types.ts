@@ -17,6 +17,20 @@ export interface QuestionSet {
   title: string;
   relatedLearningFields?: string[];
   locationInRegulation?: string;
-  catalog: Catalog;
+  catalogId: number;
   examples: QuestionSetExample[];
+}
+
+export interface Topic {
+  id: number;
+  title: string;
+  competences: Competence[];
+}
+
+export interface Competence {
+  id: number;
+  title: string;
+  description?: string;
+  createdAt?: string; // ISO string
+  updatedAt?: string; // ISO string
 }

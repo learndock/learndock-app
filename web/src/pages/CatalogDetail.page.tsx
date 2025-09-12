@@ -26,7 +26,7 @@ export default function CatalogDetailPage() {
             getQuestionSetsForCatalog(catalogId)
         ]).then(([cat, sets]) => {
             setCatalog(cat);
-            setQuestionSets(sets.filter(qs => qs.catalog.id === catalogId));
+            setQuestionSets(sets.filter(qs => qs.catalogId === catalogId));
         }).finally(() => setIsLoading(false));
     }, [catalogId]);
 
@@ -55,10 +55,13 @@ export default function CatalogDetailPage() {
     }
 
     return (
-        <div className="h-full px-6 py-12 sm:px-6 md:px-12 bg-gradient-to-br from-background via-cards to-background rounded-xl shadow-2xl">
+        <div className="h-full px-6 py-12 sm:px-6 md:px-12 bg-gradient-to-br from-background via-cards to-background rounded-xl shadow-2xl flex flex-col">
             <CatalogDetailHeader catalog={catalog} />
 
-            <CatalogQuestionSetSection questionSets={questionSets} />
+            <div className="flex-1 overflow-hidden mt-6">
+                <CatalogQuestionSetSection questionSets={questionSets} />
+            </div>
         </div>
     );
+
 }

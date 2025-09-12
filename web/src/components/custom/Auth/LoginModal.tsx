@@ -1,10 +1,9 @@
-import Cookies from "js-cookie";
-import {useState} from "react";
-import {FetchError} from "../../../core/FetchWrapper";
-import {login} from "../../../service/Auth.service";
-import {AuthRequest} from "../../../types/Auth.types";
-import {Modal} from "../../lib/Modals/Modal.tsx";
-import {useLang} from "../../../hooks/Language.hooks.ts";
+import { useState } from "react";
+import { FetchError } from "../../../core/FetchWrapper";
+import { useLang } from "../../../hooks/Language.hooks.ts";
+import { AuthRequest } from "../../../types/Auth.types";
+import { performLogin } from "../../../utils/Auth.utils.ts";
+import { Modal } from "../../lib/Modals/Modal.tsx";
 
 interface Props {
     isOpen: boolean;
@@ -13,7 +12,7 @@ interface Props {
 }
 
 export const LoginModal = ({ isOpen, onClose, onSwitch }: Props) => {
-    const lang  = useLang();
+    const lang = useLang();
     const [form, setForm] = useState<AuthRequest>({ username: "", password: "" });
     const [error, setError] = useState<string | null>(null);
 
@@ -23,12 +22,8 @@ export const LoginModal = ({ isOpen, onClose, onSwitch }: Props) => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            const loginData = await login(form);
-            if(!loginData || !loginData.token) return setError(lang("ERROR_UNEXPECTED"));
-
-            Cookies.set("accessToken", loginData.token);
-            dispatchEvent(new Event("refetchAuth"));
-            setError(null);
+            const success = await performLogin(form);
+            setError(success ? null : lang("ERROR_UNEXPECTED"));
             onClose();
         } catch (error) {
             if (!(error instanceof FetchError)) return setError(lang("ERROR_UNEXPECTED"));

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>LearnDock: Access Restricted</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+          --bg: #121212;
+          --card-bg: #1e1e2f;
+          --accent: #7c3aed;
+          --accent-2: #06b6d4;
+          --muted: #cbd5e1;
+          --danger: #f87171;
+          --shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        * { box-sizing: border-box; }
+        body, html { margin: 0; height: 100%; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--muted); display: flex; align-items: center; justify-content: center; padding: 20px; }
+
+        .card {
+          background: var(--card-bg);
+          border-radius: 16px;
+          padding: 32px;
+          max-width: 900px;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 140px 1fr;
+          gap: 24px;
+          box-shadow: var(--shadow);
+        }
+
+        .badge {
+          width: 120px;
+          height: 120px;
+          background: linear-gradient(135deg, var(--accent), var(--accent-2));
+          border-radius: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 8px 20px rgba(124, 58, 237,0.3);
+        }
+
+        .badge svg {
+          width: 60px;
+          height: 60px;
+          fill: white;
+        }
+
+        h1 { margin: 0 0 12px; font-size: 22px; color: white; }
+        p.lead { margin: 0 0 20px; line-height: 1.5; color: #a1a1aa; }
+
+        .explain {
+          background: rgba(255,255,255,0.05);
+          border: 1px solid rgba(255,255,255,0.1);
+          border-radius: 10px;
+          padding: 14px;
+          font-size: 14px;
+          margin-bottom: 20px;
+          color: #e5e7eb;
+        }
+
+        .actions {
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+
+        .btn {
+          padding: 10px 16px;
+          border-radius: 12px;
+          font-weight: 600;
+          cursor: pointer;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          transition: all 0.2s;
+        }
+
+        .btn-primary {
+          background: linear-gradient(90deg, var(--accent), var(--accent-2));
+          color: white;
+          box-shadow: 0 4px 12px rgba(124, 58, 237,0.3);
+        }
+
+        .btn-primary:hover { opacity: 0.9; }
+
+        .btn-ghost {
+          background: transparent;
+          border: 1px solid rgba(124, 58, 237,0.3);
+          color: var(--accent);
+        }
+
+        .btn-ghost:hover { background: rgba(124,58,237,0.1); }
+
+        .note { font-size: 13px; color: #9ca3af; margin-top: 12px; }
+
+        .tips {
+          margin-top: 20px;
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+
+        .tip {
+          padding: 10px 14px;
+          background: rgba(124,58,237,0.05);
+          border-radius: 10px;
+          font-size: 13px;
+          color: #e5e7eb;
+          border: 1px solid rgba(124,58,237,0.1);
+        }
+
+        footer { margin-top: 24px; font-size: 12px; color: #6b7280; }
+
+        @media (max-width:720px){
+          .card { grid-template-columns: 1fr; padding: 24px; }
+          .badge { margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+
+<main aria-labelledby="pageTitle" class="card" role="main">
+    <div aria-hidden="true" class="badge">
+        <!-- Lock SVG icon -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C9.243 2 7 4.243 7 7v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7c0-2.757-2.243-5-5-5zm-3 8V7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9zm10 2v8H5v-8h14z"/>
+        </svg>
+    </div>
+
+    <div>
+        <h1 id="pageTitle">Access Restricted</h1>
+        <p class="lead">This endpoint requires administrative authorization.</p>
+
+        <div class="explain">
+            Visit the application's home page first to initialize your session, cookies, and roles. Once loaded, you can
+            access this endpoint if authorized.
+        </div>
+
+        <div class="actions">
+            <a class="btn btn-primary" href="#" id="goBase">Open Application Home</a>
+        </div>
+
+        <div class="note" id="noteText">
+            If access is still denied after visiting the home page, refresh or contact your administrator.
+        </div>
+
+        <div aria-hidden="true" class="tips">
+            <div class="tip">Base page sets the required security cookies.</div>
+            <div class="tip">Private/incognito windows may not preserve your login state.</div>
+        </div>
+
+        <footer>LearnDock • Secured Endpoint Notice</footer>
+    </div>
+</main>
+
+<script>
+    (function(){
+      const base = window.location.origin + '/';
+      const goBase = document.getElementById('goBase');
+      const note = document.getElementById('noteText');
+
+      goBase.href = base;
+
+      if (window.location.pathname === '/' || window.location.pathname === '') {
+        note.textContent = 'You are already on the application home page. Sign in or contact admin if access is denied.';
+      }
+
+      document.addEventListener('keydown', function(e){
+        if(e.key.toLowerCase() === 'h') window.location.href = base;
+      });
+    })();
+</script>
+
+</body>
+</html>

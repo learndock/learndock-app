@@ -1,0 +1,416 @@
+{
+  "4.1": {
+    "name": "Berufsausbildung sowie Arbeits- und Tarifrecht",
+    "themen": {
+      "4.1.01": {
+        "name": "Rechte und Pflichten des Auszubildenden und des Ausbildenden",
+        "themenkreise": [
+          "Inhalte des Ausbildungsvertrages (§ 10 f. BBiG): Vertragspartner, Beginn und Dauer der Ausbildung, sachliche und zeitliche Gliederung der Berufsausbildung, Dauer der täglichen Arbeitszeit, Probezeit, Vergütungs- und Urlaubsregelungen, Kündigungsbedingungen, Folgen bei Nichteinhaltung der Rechte und Pflichten, Geltungsbereich, Beendigung, Prüfungen, Abschluss"
+        ]
+      },
+      "4.1.02": {
+        "name": "Vorteile der Ausbildung im dualen System der Berufsbildung",
+        "themenkreise": [
+          "Unterschiedliche Lernorte, auf regionaler Ebene",
+          "Zusammenwirken von Betrieb und Berufsschule, z.B. Absprachen, Arbeitskreise, Abstimmung des Zeitpunkts der Vermittlung der Inhalte"
+        ]
+      },
+      "4.1.03": {
+        "name": "Aufgaben von Ausbildungsbetrieb, Berufsschule und Kammern im Rahmen der Berufsausbildung",
+        "themenkreise": [
+          "Ausbildungsvertrag",
+          "Bereitstellung von Arbeitsmaterialien",
+          "Berufsbildungsgesetz",
+          "Berufsschulpflicht",
+          "Berufsschulzeiten",
+          "Freistellung zur Prüfung",
+          "Regelungstatbestände in Ausbildungsordnung"
+        ]
+      },
+      "4.1.04": {
+        "name": "Ausbildungsrahmenplan, sachliche und zeitliche Gliederung",
+        "themenkreise": [
+          "Betrieblicher Ausbildungsplan",
+          "Einsatz- und Versetzungsplan im Betrieb",
+          "Rahmenlehrplan",
+          "Rahmenplan für die berufsschulische Ausbildung",
+          "Zuordnung der Lernziele des Ausbildungsrahmenplans zu den Inhalten des betrieblichen Ausbildungsplans, unter Berücksichtigung betrieblicher Besonderheiten"
+        ]
+      },
+      "4.1.05": {
+        "name": "Grundsätze des Individual- und Kollektivarbeitsrechtes",
+        "themenkreise": [
+          "Kenntnis der Arbeitnehmerrechte und -pflichten im Betrieb",
+          "Kenntnis der wesentlichen Bestimmungen aus den relevanten Rechtsgebieten: Berufsbildungsgesetz, Arbeitsschutzgesetz, Bundeselterngesetz, Allgemeines Gleichbehandlungsgesetz, Kündigungsschutzgesetz, Jugendarbeitsschutzgesetz, Arbeitsstättenverordnung, Arbeitszeitgesetz, Betriebsverfassungsgesetz, Betriebsvereinbarungen (z.B. betriebliche Arbeitszeitregelung, betriebliches Beurteilungsverfahren), Sozialversicherung, Lohnsteuer, Mutterschutzgesetz, Schwerbehindertengesetz"
+        ]
+      },
+      "4.1.06": {
+        "name": "Arbeitgeberorganisationen",
+        "themenkreise": [
+          "Arbeitgeberverbände",
+          "Industrie- und Handelskammern",
+          "Wirtschaftsverbände"
+        ]
+      },
+      "4.1.07": {
+        "name": "Arbeitnehmerorganisationen",
+        "themenkreise": [
+          "Betriebsräte",
+          "Betriebsversammlung",
+          "Einigungsstelle",
+          "Gewerkschaften",
+          "Jugend- und Auszubildendenvertretung",
+          "Mitbestimmungs- und Mitwirkungsrechte",
+          "Wahl und Zusammensetzung"
+        ]
+      },
+      "4.1.08": {
+        "name": "Tarifrecht",
+        "themenkreise": [
+          "Geltungsbereich",
+          "Laufzeit",
+          "Schlichtung",
+          "Tarifautonomie",
+          "Tarifbindung",
+          "Tarifkonflikt (Arbeitskampf)",
+          "Tarifverhandlung",
+          "Tarifverträge"
+        ]
+      },
+      "4.1.09": {
+        "name": "Lohn- und Gehaltsformen",
+        "themenkreise": [
+          "Brutto/Netto",
+          "Lohnsteuer, Kirchensteuer",
+          "Sozialabgaben",
+          "Vermögenswirksame Leistungen"
+        ]
+      },
+      "4.1.10": {
+        "name": "Lebensbegleitendes Lernen",
+        "themenkreise": [
+          "Berufliche Fortbildung und Umschulung",
+          "Innerbetriebliche Fortbildung",
+          "Regelungen und Möglichkeiten für interne und externe Weiterbildung in Betrieb und Branche, evtl. tarifvertragliche Regelungen",
+          "Staatliche Fördermaßnahmen"
+        ]
+      },
+      "4.1.11": {
+        "name": "Lerntechniken",
+        "themenkreise": [
+          "Auditives Lernen, z.B. Lerngruppen bilden, Vorträge anhören, Lerninhalte aufnehmen und abspielen",
+          "Kommunikatives Lernen, z.B. Dialoge, Diskussionen, Lerngruppen, Frage-Antwort-Spiele",
+          "Motorisches Lernen, z.B. ‚Learning by Doing', Rollenspiele, Gruppenaktivitäten",
+          "Visuelles Lernen, z.B. Lernposter mit Mindmaps, Schaubilder, Grafiken erstellen, Videos ansehen, eigene Zusammenfassungen und Lernkarteien schreiben"
+        ]
+      },
+      "4.1.12": {
+        "name": "Arbeitstechniken",
+        "themenkreise": [
+          "Arbeitsplanung- und Projektplanungstechniken",
+          "Beschaffung, Auswahl und Auswertung von Fachinformationen",
+          "Digitale Lernmedien nutzen und individuell bewerten, z.B. Internet, Apps, Plattformen (Kommunikation, Information, Videos, Austausch), Netzwerke, Computer Based Training (CBT), Web Based Training (WBT), Umgang mit mobilen Endgeräten",
+          "Gestaltung eines lernförderlichen und das Lernen integrierenden Arbeitsplatzes",
+          "Moderations- und Präsentationstechniken",
+          "Verschiedene Arbeitstechniken erlernen",
+          "Zeitmanagementtechniken"
+        ]
+      },
+      "4.1.13": {
+        "name": "Berufliche Fortbildung und Umschulung",
+        "themenkreise": [
+          "Anpassungsfortbildung",
+          "Aufstiegsfortbildung",
+          "Erhaltungsfortbildung",
+          "Innerbetriebliche Fortbildung",
+          "Staatliche Fördermaßnahmen"
+        ]
+      },
+      "4.1.14": {
+        "name": "Lebensplanung",
+        "themenkreise": [
+          "Auslandsaufenthalte, z.B. mithilfe von EU-Förderprogrammen",
+          "Bildungseinrichtungen",
+          "Entwicklung bezüglich Eigenständigkeit, Verantwortung, Reflexivität, Lernkompetenz, Team- und Führungsfähigkeit, Mitgestaltung, Kommunikation",
+          "Europass",
+          "Europäische Sozialcharta",
+          "Karriereplanung",
+          "Mobilitätsprogramme",
+          "Möglichkeiten und Grenzen einer Existenzgründung",
+          "Persönliche Weiterbildung, z.B. Studium von Fachliteratur, Selbstlernmaterialien, Fachmessen",
+          "Potenzialanalyse",
+          "Regelungen und Möglichkeiten für interne und externe Weiterbildung in Betrieb und Branche, evtl. tarifvertragliche Regelungen",
+          "Überbetriebliche Fortbildung"
+        ]
+      }
+    }
+  },
+  "4.2": {
+    "name": "Aufbau und Organisation des Ausbildungsbetriebes",
+    "themen": {
+      "4.2.01": {
+        "name": "Der Betrieb",
+        "themenkreise": [
+          "Branchenzugehörigkeit",
+          "Gesamtwirtschaft, z.B. primärer, sekundärer, tertiärer Sektor, erwerbswirtschaftliche Betriebe",
+          "Produktpalette und Märkte"
+        ]
+      },
+      "4.2.02": {
+        "name": "Rechtsformen",
+        "themenkreise": [
+          "Gemeinnützige Organisationen",
+          "Gesellschaft bürgerlichen Rechts",
+          "Kapitalgesellschaften, z.B. GmbH, AG",
+          "Personengesellschaften, z.B. Einzelunternehmung, KG, OHG, GmbH & Co. KG"
+        ]
+      },
+      "4.2.03": {
+        "name": "Unternehmensstruktur und Organisationsform",
+        "themenkreise": [
+          "Arbeitsabläufe",
+          "Aufgabenteilung",
+          "Einlinien- bzw. Mehrlinien-, Stab-Liniensystem",
+          "Matrixorganisation",
+          "Spartenorganisation"
+        ]
+      },
+      "4.2.04": {
+        "name": "Wirtschaftliche Verflechtungen",
+        "themenkreise": [
+          "Fusion",
+          "Kartell",
+          "Konzern"
+        ]
+      },
+      "4.2.05": {
+        "name": "Ziele von Betrieben und Unternehmen",
+        "themenkreise": [
+          "Produktivität",
+          "Rentabilität",
+          "Wirtschaftlichkeit",
+          "Zielkonflikte"
+        ]
+      },
+      "4.2.06": {
+        "name": "Betriebliche und gesamtwirtschaftliche Arbeitsteilung",
+        "themenkreise": [
+          "Globalisierung",
+          "Möglichkeiten und Grenzen der Sozialen Marktwirtschaft"
+        ]
+      },
+      "4.2.07": {
+        "name": "Ziele und Aufgaben von Arbeitgeber- und Arbeitnehmerverbänden",
+        "themenkreise": [
+          "Berufsständische Vertretungen und Organisationen",
+          "Branchenspezifische Gewerkschaften und Arbeitgeberverbände",
+          "Ehrenamtliche Mitwirkung, z.B. Prüfungsausschuss",
+          "Wirtschaftsorganisationen"
+        ]
+      },
+      "4.2.08": {
+        "name": "Ziele und Aufgaben von Behörden und Verwaltungen",
+        "themenkreise": [
+          "KEIN THEMENKREIS ANGEGEBEN"
+        ]
+      },
+      "4.2.09": {
+        "name": "Grundsatz der vertrauensvollen Zusammenarbeit zwischen Arbeitgeber- und Arbeitnehmervertretern",
+        "themenkreise": [
+          "Betriebsrat",
+          "Betriebsvereinbarungen bzw. Personalvertretung auf Grundlage des Personalvertretungsgesetzes",
+          "Grundlage des Betriebsverfassungsgesetzes",
+          "Jugend- und Auszubildendenvertreter und deren Informations-, Beratungs- und Mitbestimmungsrechte"
+        ]
+      }
+    }
+  },
+  "4.3": {
+    "name": "Sicherheit und Gesundheitsschutz bei der Arbeit",
+    "themen": {
+      "4.3.01": {
+        "name": "Gesundheits- und Arbeitsschutzvorschriften",
+        "themenkreise": [
+          "Arbeitsplatzergonomie",
+          "Arbeitsschutzgesetz",
+          "Arbeitssicherheitsgesetz",
+          "Arbeitsstättenverordnung",
+          "Arbeitszeitgesetz",
+          "Aufsichtsbehörde für Arbeitsschutz (Gewerbeaufsicht)",
+          "Betriebssicherheitsverordnung",
+          "Bildschirmarbeitsplatzverordnung",
+          "Jugendarbeitsschutzgesetz",
+          "Unfallverhütungsvorschriften (UVV)"
+        ]
+      },
+      "4.3.02": {
+        "name": "Gefährdungen und Beanspruchungen wahrnehmen und einschätzen",
+        "themenkreise": [
+          "Besondere Fürsorgepflicht des Arbeitgebers",
+          "Ergonomisch, akustisch, psychisch",
+          "Ergonomische Arbeitsplatzgestaltung",
+          "Ersthelfer am Arbeitsplatz",
+          "Gefahren beachten und ggf. melden",
+          "Mechanisch, elektrisch, thermisch, chemisch",
+          "Sicherheitshinweise, Vorschriften und Anweisungen beachten"
+        ]
+      },
+      "4.3.03": {
+        "name": "Vorsorgeuntersuchungen",
+        "themenkreise": [
+          "Augenuntersuchung für Bildschirmarbeitsplätze",
+          "Psychische Gefährdungsbeurteilung"
+        ]
+      },
+      "4.3.04": {
+        "name": "Aufgaben der Sicherheitsbeauftragten",
+        "themenkreise": [
+          "KEIN THEMENKREIS ANGEGEBEN"
+        ]
+      },
+      "4.3.05": {
+        "name": "Vorschriften im betrieblichen und persönlichen Arbeitsablauf",
+        "themenkreise": [
+          "Allgemeine und betriebliche Verhaltensregeln",
+          "Im Gebäude/am Arbeitsplatz",
+          "Notausgänge (Kennzeichnung)",
+          "Prüfzeichen, z.B. CE-Zeichen",
+          "Sachgerechter Umgang mit Gefahrenpotenzialen",
+          "Schriften, Farben und Zeichen des Arbeitsschutzes",
+          "Schutzarten elektrischer Betriebsmittel",
+          "Schutzklassen",
+          "Wissen über Fluchtwege"
+        ]
+      },
+      "4.3.06": {
+        "name": "Verhaltensweisen bei Unfällen",
+        "themenkreise": [
+          "Erste-Hilfe-Maßnahmen",
+          "Ersthelfer, Notruf- und Notfallnummern",
+          "Evakuierung und Dokumentation",
+          "Fluchtwege und Sammelplätze",
+          "Meldeketten",
+          "Meldepflicht von Unfällen"
+        ]
+      },
+      "4.3.07": {
+        "name": "Verhaltensweisen im Brandfall sowie vorbeugender Brandschutz",
+        "themenkreise": [
+          "Brandmeldung",
+          "Brandschutzklassen (A, B, C, D)",
+          "Brandschutzmittel: Feuerlöscher (Standort, Bedienungsanleitung, Wirkungsweise), Löschdecken",
+          "Brandschutzordnung - Verhalten in Brandfällen, z.B. Verbot zur Fahrstuhlnutzung, Schließen von Türen und Fenstern im Gebäude/am Arbeitsplatz",
+          "Brandursachen durch brennbare Stoffe und Hitzeentwicklung, z.B. nicht ausgeschaltete Heißwasserkocher und Kaffeemaschinen",
+          "Flucht- und Rettungswege",
+          "Sammelplätze",
+          "Sicherheitszeichen"
+        ]
+      },
+      "4.3.08": {
+        "name": "Grundlagen der IT-Sicherheit kennen und umsetzen",
+        "themenkreise": [
+          "Das betriebliche IT-Sicherheitskonzept kennen und beachten",
+          "Die Aufgaben des Bundesamtes für Sicherheit in der Informationstechnik (BSI) kennen",
+          "Die Empfehlungen und Standards des BSI beachten und einhalten",
+          "Die Verfügbarkeit, Integrität, Vertraulichkeit und Authentizität von Daten berücksichtigen",
+          "Die Ziele der europäischen Datenschutz-Grundverordnung (DSGVO) kennen",
+          "Die Ziele von Informationssicherheit und Datenschutz kennen und unterscheiden.",
+          "Technisch organisatorische Maßnahmen (TOM) zur Gewährleistung der IT-Sicherheit kennen und umsetzen"
+        ]
+      }
+    }
+  },
+  "4.4": {
+    "name": "Umweltschutz",
+    "themen": {
+      "4.4.01": {
+        "name": "Umweltbelastungen wahrnehmen und vermeiden helfen",
+        "themenkreise": [
+          "Abfalltrennung und -vermeidung",
+          "Rationelle Energie- und Ressourcenverwendung, z.B. unnötige Gerätelaufzeiten vermeiden, Umgang mit Speicher- und Printmedien",
+          "Spezifische Risiken der IT-Prozesse sowie von IT-beteiligten Prozessen, z.B. USV-Anlagen",
+          "Wiederverwertung (Recycling)"
+        ]
+      },
+      "4.4.02": {
+        "name": "Umgang mit Abfällen",
+        "themenkreise": [
+          "Branchenspezifische Abfälle",
+          "Erfassung",
+          "Lagerung und Entsorgung von z.B. Datenträgern oder Kabeln"
+        ]
+      },
+      "4.4.03": {
+        "name": "Öffentliche Systeme und Verordnungen/Gesetze",
+        "themenkreise": [
+          "Immissionsschutzgesetz, technische Anleitungen, z.B. zu Lärm, Luft, Abfall",
+          "Teilnahme am Dualen System im Hinblick auf Verpackungsentsorgung"
+        ]
+      },
+      "4.4.04": {
+        "name": "Externe Auswirkungen",
+        "themenkreise": [
+          "Im Rahmen von Nachhaltigkeit sind auch Auswirkungen auf Umwelt, Pflanzen, Tiere, Lebensräume zu reflektieren"
+        ]
+      },
+      "4.4.05": {
+        "name": "Umweltschonende Ressourcennutzung",
+        "themenkreise": [
+          "Berücksichtigen wirtschaftlicher Nachhaltigkeit bereits bei Einkauf und Lieferantenauswahl",
+          "Ressourcenverbrauch und Umweltschutz in Kombination denken, z.B. Nutzung von Strom aus regenerativen Quellen",
+          "Sparsamer und effektiver Umgang mit Roh-, Hilfs- und Betriebsstoffen (ggf. erforderliche Kennzeichnung und getrennte Lagerung beachten)"
+        ]
+      },
+      "4.4.06": {
+        "name": "Abfallvermeidung und -reduzierung",
+        "themenkreise": [
+          "KEIN THEMENKREIS ANGEGEBEN"
+        ]
+      },
+      "4.4.07": {
+        "name": "Rechtsfolgen bei Nichteinhaltung",
+        "themenkreise": [
+          "KEIN THEMENKREIS ANGEGEBEN"
+        ]
+      }
+    }
+  },
+  "4.5": {
+    "name": "Vernetztes Zusammenarbeiten unter Nutzung digitaler Medien",
+    "themen": {
+      "4.5.01": {
+        "name": "Wertschätzende Zusammenarbeit",
+        "themenkreise": [
+          "Fähigkeit, effektiv, integer und respektvoll mit verschiedenen Teams zusammenzuarbeiten",
+          "Interdisziplinarität, Interkulturalität",
+          "Unternehmenswerte beachten und betriebliche Ethikregeln anwenden",
+          "Übernahme gemeinsamer Verantwortung für die Zusammenarbeit und Wertschätzung der einzelnen Beiträge jedes Teammitglieds"
+        ]
+      },
+      "4.5.02": {
+        "name": "Informationstechnische Schutzziele bei der Kommunikation kennen und umsetzen",
+        "themenkreise": [
+          "Bei der Nutzung von Social Media die Gefahren für die IT-Sicherheit im privaten und betrieblichen Bereich kennen und beachten",
+          "Die Gefahren des Social Engineering kennen und Schäden vermeiden",
+          "Die Notwendigkeit zur Entwicklung eines Sicherheitsbewusstseins bei der Nutzung von IT-Technik im privaten und betrieblichen Bereich entwickeln",
+          "Die möglichen (auch juristischen) Konsequenzen von Äußerungen über den eigenen Arbeitgeber in sozialen Netzwerken berücksichtigen",
+          "Im Umgang mit Kommunikation und Information Zuständigkeitsabgrenzung verdeutlichen",
+          "Nachrichten und Inhalte auch aus Sicht der Empfänger betrachten",
+          "Reflexion von Erfahrungen in virtuellen Räumen",
+          "Sensibler Umgang mit Adressatenlisten in der digitalen Kommunikation",
+          "Sicherer Umgang mit dienstlichen E-Mails, kurzer, zielführender, höflicher und korrekter Informationsaustausch per E-Mail, Regeln für die richtige Net(t)ikette"
+        ]
+      },
+      "4.5.03": {
+        "name": "Ethische Aspekte und Compliance-Regelungen",
+        "themenkreise": [
+          "Ergänzend dazu sind auch allgemeine und betriebliche Compliance-Regelungen zu berücksichtigen",
+          "Gender-Neutralität gewährleisten, aber auch z.B. das dritte Geschlecht berücksichtigen",
+          "Im Rahmen von Nachhaltigkeit sind auch Auswirkungen auf alles Lebendige (Umwelt, Pflanzen, Tiere, Lebensräume) zu reflektieren.",
+          "Im Zentrum ethischer Aspekte steht die Würde aller Menschen sowie deren Integrität. Diese ist für alle direkt und indirekt Betroffenen der IT-Lösungen kurz-, mittel- und langfristig zu gewährleisten.",
+          "Net(t)ikette gewährleisten und unterschiedliche Perspektiven und Befindlichkeiten berücksichtigen"
+        ]
+      }
+    }
+  }
+}

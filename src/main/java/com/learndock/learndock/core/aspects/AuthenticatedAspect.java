@@ -3,13 +3,12 @@ package com.learndock.learndock.core.aspects;
 import com.learndock.learndock.core.annotations.Authenticated;
 import com.learndock.learndock.core.exceptions.APIAccessDeniedException;
 import com.learndock.learndock.domain.models.users.User;
-import com.learndock.learndock.service.users.UserService;
+import com.learndock.learndock.service.auth.AuthHeaderService;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -22,7 +21,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class AuthenticatedAspect {
 
-    private final UserService userInfoService;
+    private final AuthHeaderService authHeaderService;
 
     /**
      * Check if the user is authenticated to access the resource.
@@ -34,9 +33,8 @@ public class AuthenticatedAspect {
     @Around("@annotation(com.learndock.learndock.core.annotations.Authenticated)")
     public Object checkAuthorization(ProceedingJoinPoint joinPoint) throws Throwable {
         HttpServletRequest request = ((ServletRequestAttributes) Objects.requireNonNull(RequestContextHolder.getRequestAttributes())).getRequest();
-        String authHeader = request.getHeader(HttpHeaders.AUTHORIZATION);
 
-        Optional<User> userOpt = userInfoService.getUserByAuthHeader(authHeader);
+        Optional<User> userOpt = authHeaderService.extractUser(request);
         if (userOpt.isEmpty()) {
             throw new APIAccessDeniedException("You have to be logged in to access this resource.");
         }

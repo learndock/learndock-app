@@ -1,0 +1,1053 @@
+[
+  {
+    "title": "Betreiben von IT-Systemen",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Schichtenmodelle benennen und zuordnen können",
+        "competences": [
+          {
+            "title": "ARP",
+            "description": ""
+          },
+          {
+            "title": "IPv4/IPv6",
+            "description": ""
+          },
+          {
+            "title": "MAC",
+            "description": ""
+          },
+          {
+            "title": "Routing",
+            "description": ""
+          },
+          {
+            "title": "Switching",
+            "description": ""
+          },
+          {
+            "title": "TCP/UDP",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Netzwerkkomponenten vergleichen und beschreiben können",
+        "competences": [
+          {
+            "title": "Bridge",
+            "description": ""
+          },
+          {
+            "title": "Firewall",
+            "description": ""
+          },
+          {
+            "title": "Router",
+            "description": ""
+          },
+          {
+            "title": "Switch",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Netzwerkkonzepte (-topologien, -infrastrukturen) benennen und charakterisieren",
+        "competences": [
+          {
+            "title": "Ausdehnung: LAN/WAN/MAN/GAN",
+            "description": ""
+          },
+          {
+            "title": "Bluetooth",
+            "description": ""
+          },
+          {
+            "title": "Datenübertragungsrate",
+            "description": ""
+          },
+          {
+            "title": "Drahtlos: PAN/WLAN/Mesh",
+            "description": ""
+          },
+          {
+            "title": "Netzwerkplan",
+            "description": ""
+          },
+          {
+            "title": "Netzwerktopologie (FI DV/FI SI)",
+            "description": ""
+          },
+          {
+            "title": "Sicherheit in Drahtlosnetzen",
+            "description": ""
+          },
+          {
+            "title": "Sicherheitskonzepte und -risiken",
+            "description": ""
+          },
+          {
+            "title": "Strukturierte Verkabelung",
+            "description": ""
+          },
+          {
+            "title": "VLAN",
+            "description": ""
+          },
+          {
+            "title": "Verschlüsselung auf Netzwerkebene, VPN",
+            "description": ""
+          },
+          {
+            "title": "Zugriffskontrolle im Netzwerk (RADIUS, Kerberos ...)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Peer-to-Peer bzw. Client-Server-Konzepte vergleichen und hinsichtlich ihres Einsatzes bewerten können",
+        "competences": [
+          {
+            "title": "Dateifreigaben, z.B. SMB/CIFS",
+            "description": ""
+          },
+          {
+            "title": "Datenabruf, z.B. HTTP, ODBC",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Übertragungsprotokolle und ihre Eigenschaften erläutern und zielgerichtet einsetzen können",
+        "competences": [
+          {
+            "title": "HTTP/HTTPS",
+            "description": ""
+          },
+          {
+            "title": "TCP/UDP",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Standortübergreifende und -unabhängige Kommunikation situationsgerecht auswählen und einrichten können",
+        "competences": [
+          {
+            "title": "IPsec …",
+            "description": ""
+          },
+          {
+            "title": "Tunneling",
+            "description": ""
+          },
+          {
+            "title": "VPN-Modelle",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Netzwerkrelevante Dienste beschreiben können",
+        "competences": [
+          {
+            "title": "DHCP",
+            "description": ""
+          },
+          {
+            "title": "DNS",
+            "description": ""
+          },
+          {
+            "title": "Proxy",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Anforderungen an Verfügbarkeit von Anwendungsdiensten beurteilen können",
+        "competences": [
+          {
+            "title": "Datenbanken",
+            "description": ""
+          },
+          {
+            "title": "Echtzeitkommunikation",
+            "description": ""
+          },
+          {
+            "title": "Groupware",
+            "description": ""
+          },
+          {
+            "title": "Mailserver",
+            "description": ""
+          },
+          {
+            "title": "Webserver",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Risiken identifizieren, Maßnahmen planen und Ausfallwahrscheinlichkeiten berücksichtigen",
+        "competences": [
+          {
+            "title": "MTBF/AFR?",
+            "description": ""
+          },
+          {
+            "title": "Notfallkonzept (Disaster Recovery)",
+            "description": ""
+          },
+          {
+            "title": "PDCA-Zyklus",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Maßnahmen zur Sicherstellung des Betriebes beurteilen können",
+        "competences": [
+          {
+            "title": "Elektrotechnisch (USV)",
+            "description": ""
+          },
+          {
+            "title": "Hardwaretechnisch (Redundanzen), RAID",
+            "description": ""
+          },
+          {
+            "title": "Softwaretechnisch (Backups ...)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Monitoringsysteme anwenden und Ergebnisse interpretieren können",
+        "competences": [
+          {
+            "title": "Festlegen der Monitoringdaten",
+            "description": ""
+          },
+          {
+            "title": "Festlegen von Schwellwerten",
+            "description": ""
+          },
+          {
+            "title": "Predictive Maintenance",
+            "description": ""
+          },
+          {
+            "title": "Ressourcenengpässe",
+            "description": ""
+          },
+          {
+            "title": "SNMP, S.M.A.R.T. u.Ä.",
+            "description": ""
+          },
+          {
+            "title": "Systemlastanalyse",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Monitoringergebnisse analysieren und korrektive Maßnahmen bestimmen können",
+        "competences": [
+          {
+            "title": "Eskalationsstufen",
+            "description": ""
+          },
+          {
+            "title": "Incident Management (Ticketsystem)",
+            "description": ""
+          },
+          {
+            "title": "Service Level Agreement (SLA), Service Level 1-3",
+            "description": ""
+          },
+          {
+            "title": "Standard Operation Procedures (SOP)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Erstellen und Erweitern von Handbüchern für Benutzer und Systembetreuer",
+        "competences": [
+          {
+            "title": "Checklisten",
+            "description": ""
+          },
+          {
+            "title": "Programm- und Konfigurationsdokumentation",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Inbetriebnehmen von Speicherlösungen",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Technische und organisatorische Maßnahmen (TOM)",
+        "competences": [
+          {
+            "title": "Berechtigungskonzepte",
+            "description": ""
+          },
+          {
+            "title": "Organisationsstrukturen (Zugang, Zutritt, Zugriff)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Möglichkeiten der physischen/hardwaretechnischen Absicherung benennen",
+        "competences": [
+          {
+            "title": "Elementarrisiken, z.B. Feuer, Hochwasser",
+            "description": ""
+          },
+          {
+            "title": "Zugangskontrollen, z.B. Gebäude, Serverraum, Schrank ...",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Möglichkeiten der softwaretechnischen Absicherung implementieren können",
+        "competences": [
+          {
+            "title": "Firewall/Webfilter",
+            "description": ""
+          },
+          {
+            "title": "Portsecurity",
+            "description": ""
+          },
+          {
+            "title": "User- und Zugriffsmanagement",
+            "description": ""
+          },
+          {
+            "title": "Verschlüsselung, z.B. Bitlocker",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Verschiedene Service- und Liefermodelle benennen und bedarfsorientiert auswählen können",
+        "competences": [
+          {
+            "title": "On Premises, Cloud ...",
+            "description": ""
+          },
+          {
+            "title": "Saas, laaS, Paas …",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Daten heterogener Quellen zusammenführen können",
+        "competences": [
+          {
+            "title": "Bildung eines Data Lake o.a.",
+            "description": ""
+          },
+          {
+            "title": "Datenaustauschformate: XML, JSON, CSV u.a.",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Netzwerkkomponenten und -protokolle beschreiben können",
+        "competences": [
+          {
+            "title": "Ethernet",
+            "description": ""
+          },
+          {
+            "title": "FibreChannel",
+            "description": ""
+          },
+          {
+            "title": "NAS",
+            "description": ""
+          },
+          {
+            "title": "NFS",
+            "description": ""
+          },
+          {
+            "title": "SAN",
+            "description": ""
+          },
+          {
+            "title": "SMB",
+            "description": ""
+          },
+          {
+            "title": "iSCSI",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Programmieren von Softwarelösungen",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Softwareanforderungen erfassen können",
+        "competences": [
+          {
+            "title": "Benutzbarkeit",
+            "description": ""
+          },
+          {
+            "title": "Effizienz",
+            "description": ""
+          },
+          {
+            "title": "Funktionalität",
+            "description": ""
+          },
+          {
+            "title": "Normen anwenden",
+            "description": ""
+          },
+          {
+            "title": "Wartbarkeit",
+            "description": ""
+          },
+          {
+            "title": "Zuverlässigkeit",
+            "description": ""
+          },
+          {
+            "title": "Änderbarkeit/Erweiterbarkeit",
+            "description": ""
+          },
+          {
+            "title": "Übertragbarkeit",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Planen mit geeigneten Modellen",
+        "competences": [
+          {
+            "title": "ERM",
+            "description": ""
+          },
+          {
+            "title": "Mock up",
+            "description": ""
+          },
+          {
+            "title": "Relationales Datenbankmodell",
+            "description": ""
+          },
+          {
+            "title": "UML-Aktivitätsdiagramm",
+            "description": ""
+          },
+          {
+            "title": "UML-Anwendungsfalldiagramm",
+            "description": ""
+          },
+          {
+            "title": "UML-Klassendiagramm",
+            "description": ""
+          },
+          {
+            "title": "UML-Sequenzdiagramm",
+            "description": ""
+          },
+          {
+            "title": "UML-Zustandsdiagramm (FI AE)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Festlegen von Schnittstellen und vorhandene Schnittstellen nutzen",
+        "competences": [
+          {
+            "title": "API, z.B. REST",
+            "description": ""
+          },
+          {
+            "title": "Datenaustauschformate (XML, JSON ...)",
+            "description": ""
+          },
+          {
+            "title": "SQL",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Situationsgerechte Auswahl einer passenden Programmiersprache begründen können",
+        "competences": [
+          {
+            "title": "Einsatz von integrierten Entwicklungsumgebungen",
+            "description": ""
+          },
+          {
+            "title": "Framework/Bibliotheken",
+            "description": ""
+          },
+          {
+            "title": "Know-how/Fachkenntnis",
+            "description": ""
+          },
+          {
+            "title": "Performance, Speicherverbrauch",
+            "description": ""
+          },
+          {
+            "title": "Portabilität",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Algorithmen in einer Programmiersprache darstellen",
+        "competences": [
+          {
+            "title": "Allgemein verständlicher Programm- oder Pseudocode",
+            "description": ""
+          },
+          {
+            "title": "Code muss im Prüfungskontext nicht 1:1 kompilierbar sein, Syntaxfehler werden toleriert",
+            "description": ""
+          },
+          {
+            "title": "Kontrollstrukturen müssen ersichtlich sein",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Cyber-physische Systeme beschreiben und erweitern können",
+        "competences": [
+          {
+            "title": "Abfragerhythmus planen",
+            "description": ""
+          },
+          {
+            "title": "Auswahl von geeigneten Sensoren/Aktoren",
+            "description": ""
+          },
+          {
+            "title": "CPS-Software",
+            "description": ""
+          },
+          {
+            "title": "Kenntnis des Zugriffs auf Sensoren und Aktoren",
+            "description": ""
+          },
+          {
+            "title": "Nutzung von Bibliotheken",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Wiederkehrende Systemabläufe mithilfe von Skripten automatisieren und überwachen können",
+        "competences": [
+          {
+            "title": "Shellprogrammierung, z.B. PowerShell, Bash",
+            "description": ""
+          },
+          {
+            "title": "Skriptprogrammierung, z.B. Python …",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Qualitätssicherung und Tests",
+        "competences": [
+          {
+            "title": "Black Box-/White Box-Tests",
+            "description": ""
+          },
+          {
+            "title": "Grundsätzliches Vorgehen beim Testen, z.B. printDebugging, TDD, Unit-Test, E2E Test",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Konzipieren und Umsetzen von kundenspezifischen Softwareanwendungen",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Lasten-/Pflichtenheft erstellen können",
+        "competences": [
+          {
+            "title": "KEIN THEMENKREIS ANGEGEBEN",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Vorgehensmodelle unterscheiden können",
+        "competences": [
+          {
+            "title": "Agile Modelle, z.B. Scrum",
+            "description": ""
+          },
+          {
+            "title": "Klassische Modelle, z.B. Wasserfallmodell, Spiralmodell, V-Modell",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Strukturierte Analyse- und Designverfahren anwenden können",
+        "competences": [
+          {
+            "title": "Bottom-up-Entwurf",
+            "description": ""
+          },
+          {
+            "title": "Modularisierung",
+            "description": ""
+          },
+          {
+            "title": "Top-down-Entwurf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Objektorientierte Analyse- und Designverfahren anwenden können",
+        "competences": [
+          {
+            "title": "KEIN THEMENKREIS ANGEGEBEN",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Programmspezifikationen festlegen, Datenmodelle und Strukturen aus fachlichen Anforderungen ableiten, Schnittstellen festlegen, geeignete Programmiersprachen auswählen",
+        "competences": [
+          {
+            "title": "KEIN THEMENKREIS ANGEGEBEN",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Konzepte von Programmiersprachen kennen und exemplarisch Programmiersprachen nennen können",
+        "competences": [
+          {
+            "title": "KEIN THEMENKREIS ANGEGEBEN",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Software-Entwicklungswerkzeuge aufgabenbezogen auswählen und anwenden können",
+        "competences": [
+          {
+            "title": "Compiler",
+            "description": ""
+          },
+          {
+            "title": "Debugger",
+            "description": ""
+          },
+          {
+            "title": "Editor",
+            "description": ""
+          },
+          {
+            "title": "IDE",
+            "description": ""
+          },
+          {
+            "title": "Interpreter",
+            "description": ""
+          },
+          {
+            "title": "Linker",
+            "description": ""
+          },
+          {
+            "title": "Programmgenerator",
+            "description": ""
+          },
+          {
+            "title": "Testsoftware",
+            "description": ""
+          },
+          {
+            "title": "Versionsverwaltung",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Einsatzmöglichkeiten von Programmiersprachen kennen",
+        "competences": [
+          {
+            "title": "KEIN THEMENKREIS ANGEGEBEN",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "UML-Diagramme erstellen können",
+        "competences": [
+          {
+            "title": "Aktivitätsdiagramm",
+            "description": ""
+          },
+          {
+            "title": "Anwendungsfalldiagramm",
+            "description": ""
+          },
+          {
+            "title": "Klassendiagramm",
+            "description": ""
+          },
+          {
+            "title": "Sequenzdiagramm",
+            "description": ""
+          },
+          {
+            "title": "Zustandsdiagramm",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Datenmodelle erstellen können",
+        "competences": [
+          {
+            "title": "ER-Modell",
+            "description": ""
+          },
+          {
+            "title": "Relationales Modell",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Normalisierung anwenden können",
+        "competences": [
+          {
+            "title": "1. bis 3. Normalform",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Architektur- und Design-Pattern anwenden können",
+        "competences": [
+          {
+            "title": "Factory",
+            "description": ""
+          },
+          {
+            "title": "MVC",
+            "description": ""
+          },
+          {
+            "title": "Observer",
+            "description": ""
+          },
+          {
+            "title": "Singleton",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Anforderungen an die Softwareergonomie benennen und beurteilen können",
+        "competences": [
+          {
+            "title": "KEIN THEMENKREIS ANGEGEBEN",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Benutzeroberfläche gestalten können",
+        "competences": [
+          {
+            "title": "Usability",
+            "description": ""
+          },
+          {
+            "title": "User-Experience",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Prototypen (Mockups) erstellen können",
+        "competences": [
+          {
+            "title": "KEIN THEMENKREIS ANGEGEBEN",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Algorithmen erstellen können",
+        "competences": [
+          {
+            "title": "Pseudocode",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Objektorientierte Programmiermethodenkonzepte anwenden können",
+        "competences": [
+          {
+            "title": "Allgemeine Fehlerbehandlung in Programmen",
+            "description": ""
+          },
+          {
+            "title": "Interfaces",
+            "description": ""
+          },
+          {
+            "title": "Kapselung",
+            "description": ""
+          },
+          {
+            "title": "Polymorphie",
+            "description": ""
+          },
+          {
+            "title": "Vererbung",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Einfache Such- und Sortier-Algorithmen kennen",
+        "competences": [
+          {
+            "title": "Binäre Suche",
+            "description": ""
+          },
+          {
+            "title": "Elementares Sortieren, z.B. Bubble Sort, Selection Sort, Insertion Sort",
+            "description": ""
+          },
+          {
+            "title": "Lineare Suche",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Bestehende Funktionen/Klassen erweitern",
+        "competences": [
+          {
+            "title": "Die Darstellung soll in allgemein verständlichem Programm- oder Pseudocode erfolgen. Der Code soll für Dritte ohne Kenntnnis der verwendeten Programmiersprache lesbar sein. Der Code muss nicht in der geschriebenen Sprache komplilierbar bzw. ausführbar sein.",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Dateiformate zum Datenaustausch anwenden können und deren Einsatzbereiche kennen",
+        "competences": [
+          {
+            "title": "CSV",
+            "description": ""
+          },
+          {
+            "title": "JSON",
+            "description": ""
+          },
+          {
+            "title": "XML",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Möglichkeiten zur Nutzung von Services und Ressourcen eines Servers kennen",
+        "competences": [
+          {
+            "title": "REST",
+            "description": ""
+          },
+          {
+            "title": "SOAP",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Datenbankabfrage, Datenpflege mit SQL erstellen können",
+        "competences": [
+          {
+            "title": "Abfrage über mehrere Tabellen",
+            "description": ""
+          },
+          {
+            "title": "Aggregatfunktionen",
+            "description": ""
+          },
+          {
+            "title": "Ausdrücke und Bedingungen",
+            "description": ""
+          },
+          {
+            "title": "Gruppieren (GROUP BY, HAVING)",
+            "description": ""
+          },
+          {
+            "title": "Index (CREATE INDEX)",
+            "description": ""
+          },
+          {
+            "title": "Manipulation (INSERT, UPDATE, DELETE)",
+            "description": ""
+          },
+          {
+            "title": "Projektion (SELECT FROM)",
+            "description": ""
+          },
+          {
+            "title": "Selektion (SELECT FROM ... WHERE) und verschachtelte SELECT-Abfragen",
+            "description": ""
+          },
+          {
+            "title": "Sortieren (ORDER BY)",
+            "description": ""
+          },
+          {
+            "title": "Tabellenstruktur (CREATE TABLE, ALTER TABLE)",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sicherstellen der Qualität von Softwareanwendungen",
+    "relatedLearningFields": [],
+    "locationInRegulation": "",
+    "examples": [
+      {
+        "text": "",
+        "type": ""
+      }
+    ],
+    "topics": [
+      {
+        "title": "Anwendungen unter Berücksichtigung von Datenschutz und Datensicherheit erstellen können",
+        "competences": [
+          {
+            "title": "Datenschutz (Integrität und Authentizität von Daten, Digitale Signatur, Verschlüsselungsverfahren, Archivierung (Systeme, Fristen, Pflichten))",
+            "description": ""
+          },
+          {
+            "title": "Datensicherheit (Authentifizierung, Autorisierung, Verschlüsselung)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Datenintegrität mithilfe von technischen Maßnahmen beurteilen und sicherstellen können",
+        "competences": [
+          {
+            "title": "Constraints",
+            "description": ""
+          },
+          {
+            "title": "Transaktionssicherheit",
+            "description": ""
+          },
+          {
+            "title": "Validierungen",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Softwaretests erstellen, durchführen und die Ergebnisse analysieren können",
+        "competences": [
+          {
+            "title": "Statische und dynamische Testverfahren, z.B. Blackbox-Test, Whitebox-Test, Schreibtischtest, Modultest, End-to-End-Tests, Integrationstests, Belastungstests",
+            "description": ""
+          },
+          {
+            "title": "Testprozess: Auswahl des Testverfahrens, Kriterien für Testergebnisse definieren, Testate generieren und auswählen, Testprotokoll und Auswertung",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Grundfunktionalitäten einer Versionsverwaltung in ihrem Einsatz beschreiben und anwenden können",
+        "competences": [
+          {
+            "title": "Branches, Pull, Push, Merge (Anwendungen können Bestandteil der praktischen Prüfung sein)",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Daten und Sachverhalte aus Tests multimedial aufbereiten und situationsgerecht unter Nutzung digitaler Werkzeuge und unter Beachtung der betireblichen Vorgaben präsentieren",
+        "competences": [
+          {
+            "title": "Kann Bestandteil der praktischen Prüfung sein",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]

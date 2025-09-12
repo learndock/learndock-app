@@ -1,0 +1,476 @@
+{
+  "3.1": {
+    "name": "Betreiben von IT-Systemen",
+    "themen": {
+      "3.1.01": {
+        "name": "Schichtenmodelle benennen und zuordnen können",
+        "themenkreise": [
+          "ARP",
+          "IPv4/IPv6",
+          "MAC",
+          "Routing",
+          "Switching",
+          "TCP/UDP"
+        ]
+      },
+      "3.1.02": {
+        "name": "Netzwerkkomponenten vergleichen und beschreiben können",
+        "themenkreise": [
+          "Bridge",
+          "Firewall",
+          "Router",
+          "Switch"
+        ]
+      },
+      "3.1.03": {
+        "name": "Netzwerkkonzepte (-topologien, -infrastrukturen) benennen und charakterisieren",
+        "themenkreise": [
+          "Ausdehnung: LAN/WAN/MAN/GAN",
+          "Bluetooth",
+          "Datenübertragungsrate",
+          "Drahtlos: PAN/WLAN/Mesh",
+          "Netzwerkplan",
+          "Netzwerktopologie (FI DV/FI SI)",
+          "Sicherheit in Drahtlosnetzen",
+          "Sicherheitskonzepte und -risiken",
+          "Strukturierte Verkabelung",
+          "VLAN",
+          "Verschlüsselung auf Netzwerkebene, VPN",
+          "Zugriffskontrolle im Netzwerk (RADIUS, Kerberos ...)"
+        ]
+      },
+      "3.1.04": {
+        "name": "Peer-to-Peer bzw. Client-Server-Konzepte vergleichen und hinsichtlich ihres Einsatzes bewerten können",
+        "themenkreise": [
+          "Dateifreigaben, z.B. SMB/CIFS",
+          "Datenabruf, z.B. HTTP, ODBC"
+        ]
+      },
+      "3.1.05": {
+        "name": "Übertragungsprotokolle und ihre Eigenschaften erläutern und zielgerichtet einsetzen können",
+        "themenkreise": [
+          "HTTP/HTTPS",
+          "TCP/UDP"
+        ]
+      },
+      "3.1.06": {
+        "name": "Standortübergreifende und -unabhängige Kommunikation situationsgerecht auswählen und einrichten können",
+        "themenkreise": [
+          "IPsec …",
+          "Tunneling",
+          "VPN-Modelle"
+        ]
+      },
+      "3.1.07": {
+        "name": "Netzwerkrelevante Dienste beschreiben können",
+        "themenkreise": [
+          "DHCP",
+          "DNS",
+          "Proxy"
+        ]
+      },
+      "3.1.08": {
+        "name": "Anforderungen an Verfügbarkeit von Anwendungsdiensten beurteilen können",
+        "themenkreise": [
+          "Datenbanken",
+          "Echtzeitkommunikation",
+          "Groupware",
+          "Mailserver",
+          "Webserver"
+        ]
+      },
+      "3.1.09": {
+        "name": "Risiken identifizieren, Maßnahmen planen und Ausfallwahrscheinlichkeiten berücksichtigen",
+        "themenkreise": [
+          "MTBF/AFR?",
+          "Notfallkonzept (Disaster Recovery)",
+          "PDCA-Zyklus"
+        ]
+      },
+      "3.1.10": {
+        "name": "Maßnahmen zur Sicherstellung des Betriebes beurteilen können",
+        "themenkreise": [
+          "Elektrotechnisch (USV)",
+          "Hardwaretechnisch (Redundanzen), RAID",
+          "Softwaretechnisch (Backups ...)"
+        ]
+      },
+      "3.1.11": {
+        "name": "Monitoringsysteme anwenden und Ergebnisse interpretieren können",
+        "themenkreise": [
+          "Festlegen der Monitoringdaten",
+          "Festlegen von Schwellwerten",
+          "Predictive Maintenance",
+          "Ressourcenengpässe",
+          "SNMP, S.M.A.R.T. u.Ä.",
+          "Systemlastanalyse"
+        ]
+      },
+      "3.1.12": {
+        "name": "Monitoringergebnisse analysieren und korrektive Maßnahmen bestimmen können",
+        "themenkreise": [
+          "Eskalationsstufen",
+          "Incident Management (Ticketsystem)",
+          "Service Level Agreement (SLA), Service Level 1-3",
+          "Standard Operation Procedures (SOP)"
+        ]
+      },
+      "3.1.13": {
+        "name": "Erstellen und Erweitern von Handbüchern für Benutzer und Systembetreuer",
+        "themenkreise": [
+          "Checklisten",
+          "Programm- und Konfigurationsdokumentation"
+        ]
+      }
+    }
+  },
+  "3.2": {
+    "name": "Inbetriebnehmen von Speicherlösungen",
+    "themen": {
+      "3.2.01": {
+        "name": "Technische und organisatorische Maßnahmen (TOM)",
+        "themenkreise": [
+          "Berechtigungskonzepte",
+          "Organisationsstrukturen (Zugang, Zutritt, Zugriff)"
+        ]
+      },
+      "3.2.02": {
+        "name": "Möglichkeiten der physischen/hardwaretechnischen Absicherung benennen",
+        "themenkreise": [
+          "Elementarrisiken, z.B. Feuer, Hochwasser",
+          "Zugangskontrollen, z.B. Gebäude, Serverraum, Schrank ..."
+        ]
+      },
+      "3.2.03": {
+        "name": "Möglichkeiten der softwaretechnischen Absicherung implementieren können",
+        "themenkreise": [
+          "Firewall/Webfilter",
+          "Portsecurity",
+          "User- und Zugriffsmanagement",
+          "Verschlüsselung, z.B. Bitlocker"
+        ]
+      },
+      "3.2.04": {
+        "name": "Verschiedene Service- und Liefermodelle benennen und bedarfsorientiert auswählen können",
+        "themenkreise": [
+          "On Premises, Cloud ...",
+          "Saas, laaS, Paas …"
+        ]
+      },
+      "3.2.05": {
+        "name": "Daten heterogener Quellen zusammenführen können",
+        "themenkreise": [
+          "Bildung eines Data Lake o.a.",
+          "Datenaustauschformate: XML, JSON, CSV u.a."
+        ]
+      },
+      "3.2.06": {
+        "name": "Netzwerkkomponenten und -protokolle beschreiben können",
+        "themenkreise": [
+          "Ethernet",
+          "FibreChannel",
+          "NAS",
+          "NFS",
+          "SAN",
+          "SMB",
+          "iSCSI"
+        ]
+      }
+    }
+  },
+  "3.3": {
+    "name": "Programmieren von Softwarelösungen",
+    "themen": {
+      "3.3.01": {
+        "name": "Softwareanforderungen erfassen können",
+        "themenkreise": [
+          "Benutzbarkeit",
+          "Effizienz",
+          "Funktionalität",
+          "Normen anwenden",
+          "Wartbarkeit",
+          "Zuverlässigkeit",
+          "Änderbarkeit/Erweiterbarkeit",
+          "Übertragbarkeit"
+        ]
+      },
+      "3.3.02": {
+        "name": "Planen mit geeigneten Modellen",
+        "themenkreise": [
+          "ERM",
+          "Mock up",
+          "Relationales Datenbankmodell",
+          "UML-Aktivitätsdiagramm",
+          "UML-Anwendungsfalldiagramm",
+          "UML-Klassendiagramm",
+          "UML-Sequenzdiagramm",
+          "UML-Zustandsdiagramm (FI AE)"
+        ]
+      },
+      "3.3.03": {
+        "name": "Festlegen von Schnittstellen und vorhandene Schnittstellen nutzen",
+        "themenkreise": [
+          "API, z.B. REST",
+          "Datenaustauschformate (XML, JSON ...)",
+          "SQL"
+        ]
+      },
+      "3.3.04": {
+        "name": "Situationsgerechte Auswahl einer passenden Programmiersprache begründen können",
+        "themenkreise": [
+          "Einsatz von integrierten Entwicklungsumgebungen",
+          "Framework/Bibliotheken",
+          "Know-how/Fachkenntnis",
+          "Performance, Speicherverbrauch",
+          "Portabilität"
+        ]
+      },
+      "3.3.05": {
+        "name": "Algorithmen in einer Programmiersprache darstellen",
+        "themenkreise": [
+          "Allgemein verständlicher Programm- oder Pseudocode",
+          "Code muss im Prüfungskontext nicht 1:1 kompilierbar sein, Syntaxfehler werden toleriert",
+          "Kontrollstrukturen müssen ersichtlich sein"
+        ]
+      },
+      "3.3.06": {
+        "name": "Cyber-physische Systeme beschreiben und erweitern können",
+        "themenkreise": [
+          "Abfragerhythmus planen",
+          "Auswahl von geeigneten Sensoren/Aktoren",
+          "CPS-Software",
+          "Kenntnis des Zugriffs auf Sensoren und Aktoren",
+          "Nutzung von Bibliotheken"
+        ]
+      },
+      "3.3.07": {
+        "name": "Wiederkehrende Systemabläufe mithilfe von Skripten automatisieren und überwachen können",
+        "themenkreise": [
+          "Shellprogrammierung, z.B. PowerShell, Bash",
+          "Skriptprogrammierung, z.B. Python …"
+        ]
+      },
+      "3.3.08": {
+        "name": "Qualitätssicherung und Tests",
+        "themenkreise": [
+          "Black Box-/White Box-Tests",
+          "Grundsätzliches Vorgehen beim Testen, z.B. printDebugging, TDD, Unit-Test, E2E Test"
+        ]
+      }
+    }
+  },
+  "3.4": {
+    "name": "Konzipieren und Umsetzen von kundenspezifischen Softwareanwendungen",
+    "themen": {
+      "3.4.01": {
+        "name": "Lasten-/Pflichtenheft erstellen können",
+        "themenkreise": [
+          "KEIN THEMENKREIS ANGEGEBEN"
+        ]
+      },
+      "3.4.02": {
+        "name": "Vorgehensmodelle unterscheiden können",
+        "themenkreise": [
+          "Agile Modelle, z.B. Scrum",
+          "Klassische Modelle, z.B. Wasserfallmodell, Spiralmodell, V-Modell"
+        ]
+      },
+      "3.4.03": {
+        "name": "Strukturierte Analyse- und Designverfahren anwenden können",
+        "themenkreise": [
+          "Bottom-up-Entwurf",
+          "Modularisierung",
+          "Top-down-Entwurf"
+        ]
+      },
+      "3.4.04": {
+        "name": "Objektorientierte Analyse- und Designverfahren anwenden können",
+        "themenkreise": [
+          "KEIN THEMENKREIS ANGEGEBEN"
+        ]
+      },
+      "3.4.05": {
+        "name": "Programmspezifikationen festlegen, Datenmodelle und Strukturen aus fachlichen Anforderungen ableiten, Schnittstellen festlegen, geeignete Programmiersprachen auswählen",
+        "themenkreise": [
+          "KEIN THEMENKREIS ANGEGEBEN"
+        ]
+      },
+      "3.4.06": {
+        "name": "Konzepte von Programmiersprachen kennen und exemplarisch Programmiersprachen nennen können",
+        "themenkreise": [
+          "KEIN THEMENKREIS ANGEGEBEN"
+        ]
+      },
+      "3.4.07": {
+        "name": "Software-Entwicklungswerkzeuge aufgabenbezogen auswählen und anwenden können",
+        "themenkreise": [
+          "Compiler",
+          "Debugger",
+          "Editor",
+          "IDE",
+          "Interpreter",
+          "Linker",
+          "Programmgenerator",
+          "Testsoftware",
+          "Versionsverwaltung"
+        ]
+      },
+      "3.4.08": {
+        "name": "Einsatzmöglichkeiten von Programmiersprachen kennen",
+        "themenkreise": [
+          "KEIN THEMENKREIS ANGEGEBEN"
+        ]
+      },
+      "3.4.09": {
+        "name": "UML-Diagramme erstellen können",
+        "themenkreise": [
+          "Aktivitätsdiagramm",
+          "Anwendungsfalldiagramm",
+          "Klassendiagramm",
+          "Sequenzdiagramm",
+          "Zustandsdiagramm"
+        ]
+      },
+      "3.4.10": {
+        "name": "Datenmodelle erstellen können",
+        "themenkreise": [
+          "ER-Modell",
+          "Relationales Modell"
+        ]
+      },
+      "3.4.11": {
+        "name": "Normalisierung anwenden können",
+        "themenkreise": [
+          "1. bis 3. Normalform"
+        ]
+      },
+      "3.4.12": {
+        "name": "Architektur- und Design-Pattern anwenden können",
+        "themenkreise": [
+          "Factory",
+          "MVC",
+          "Observer",
+          "Singleton"
+        ]
+      },
+      "3.4.13": {
+        "name": "Anforderungen an die Softwareergonomie benennen und beurteilen können",
+        "themenkreise": [
+          "KEIN THEMENKREIS ANGEGEBEN"
+        ]
+      },
+      "3.4.14": {
+        "name": "Benutzeroberfläche gestalten können",
+        "themenkreise": [
+          "Usability",
+          "User-Experience"
+        ]
+      },
+      "3.4.15": {
+        "name": "Prototypen (Mockups) erstellen können",
+        "themenkreise": [
+          "KEIN THEMENKREIS ANGEGEBEN"
+        ]
+      },
+      "3.4.16": {
+        "name": "Algorithmen erstellen können",
+        "themenkreise": [
+          "Pseudocode"
+        ]
+      },
+      "3.4.17": {
+        "name": "Objektorientierte Programmiermethodenkonzepte anwenden können",
+        "themenkreise": [
+          "Allgemeine Fehlerbehandlung in Programmen",
+          "Interfaces",
+          "Kapselung",
+          "Polymorphie",
+          "Vererbung"
+        ]
+      },
+      "3.4.18": {
+        "name": "Einfache Such- und Sortier-Algorithmen kennen",
+        "themenkreise": [
+          "Binäre Suche",
+          "Elementares Sortieren, z.B. Bubble Sort, Selection Sort, Insertion Sort",
+          "Lineare Suche"
+        ]
+      },
+      "3.4.19": {
+        "name": "Bestehende Funktionen/Klassen erweitern",
+        "themenkreise": [
+          "Die Darstellung soll in allgemein verständlichem Programm- oder Pseudocode erfolgen. Der Code soll für Dritte ohne Kenntnnis der verwendeten Programmiersprache lesbar sein. Der Code muss nicht in der geschriebenen Sprache komplilierbar bzw. ausführbar sein."
+        ]
+      },
+      "3.4.20": {
+        "name": "Dateiformate zum Datenaustausch anwenden können und deren Einsatzbereiche kennen",
+        "themenkreise": [
+          "CSV",
+          "JSON",
+          "XML"
+        ]
+      },
+      "3.4.21": {
+        "name": "Möglichkeiten zur Nutzung von Services und Ressourcen eines Servers kennen",
+        "themenkreise": [
+          "REST",
+          "SOAP"
+        ]
+      },
+      "3.4.22": {
+        "name": "Datenbankabfrage, Datenpflege mit SQL erstellen können",
+        "themenkreise": [
+          "Abfrage über mehrere Tabellen",
+          "Aggregatfunktionen",
+          "Ausdrücke und Bedingungen",
+          "Gruppieren (GROUP BY, HAVING)",
+          "Index (CREATE INDEX)",
+          "Manipulation (INSERT, UPDATE, DELETE)",
+          "Projektion (SELECT FROM)",
+          "Selektion (SELECT FROM ... WHERE) und verschachtelte SELECT-Abfragen",
+          "Sortieren (ORDER BY)",
+          "Tabellenstruktur (CREATE TABLE, ALTER TABLE)"
+        ]
+      }
+    }
+  },
+  "3.5": {
+    "name": "Sicherstellen der Qualität von Softwareanwendungen",
+    "themen": {
+      "3.5.01": {
+        "name": "Anwendungen unter Berücksichtigung von Datenschutz und Datensicherheit erstellen können",
+        "themenkreise": [
+          "Datenschutz (Integrität und Authentizität von Daten, Digitale Signatur, Verschlüsselungsverfahren, Archivierung (Systeme, Fristen, Pflichten))",
+          "Datensicherheit (Authentifizierung, Autorisierung, Verschlüsselung)"
+        ]
+      },
+      "3.5.02": {
+        "name": "Datenintegrität mithilfe von technischen Maßnahmen beurteilen und sicherstellen können",
+        "themenkreise": [
+          "Constraints",
+          "Transaktionssicherheit",
+          "Validierungen"
+        ]
+      },
+      "3.5.03": {
+        "name": "Softwaretests erstellen, durchführen und die Ergebnisse analysieren können",
+        "themenkreise": [
+          "Statische und dynamische Testverfahren, z.B. Blackbox-Test, Whitebox-Test, Schreibtischtest, Modultest, End-to-End-Tests, Integrationstests, Belastungstests",
+          "Testprozess: Auswahl des Testverfahrens, Kriterien für Testergebnisse definieren, Testate generieren und auswählen, Testprotokoll und Auswertung"
+        ]
+      },
+      "3.5.04": {
+        "name": "Grundfunktionalitäten einer Versionsverwaltung in ihrem Einsatz beschreiben und anwenden können",
+        "themenkreise": [
+          "Branches, Pull, Push, Merge (Anwendungen können Bestandteil der praktischen Prüfung sein)"
+        ]
+      },
+      "3.5.05": {
+        "name": "Daten und Sachverhalte aus Tests multimedial aufbereiten und situationsgerecht unter Nutzung digitaler Werkzeuge und unter Beachtung der betireblichen Vorgaben präsentieren",
+        "themenkreise": [
+          "Kann Bestandteil der praktischen Prüfung sein"
+        ]
+      }
+    }
+  }
+}

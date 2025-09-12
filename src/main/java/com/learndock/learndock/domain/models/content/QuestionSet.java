@@ -1,5 +1,7 @@
 package com.learndock.learndock.domain.models.content;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,6 +24,9 @@ public class QuestionSet {
     private Long id;
 
     @Column(nullable = false)
+    private Long number;
+
+    @Column(nullable = false)
     private String title;
 
     @Column
@@ -33,8 +38,14 @@ public class QuestionSet {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "catalog_id")
+    @JsonIgnore
     private Catalog catalog;
 
     @OneToMany(mappedBy = "questionSet", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<QuestionSetExample> examples = new ArrayList<>();
+
+    @JsonProperty("catalogId")
+    public Long getCatalogId() {
+        return catalog != null ? catalog.getId() : null;
+    }
 }

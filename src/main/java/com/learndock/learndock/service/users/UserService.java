@@ -25,7 +25,10 @@ public class UserService {
     public Optional<User> getUserByAuthHeader(String authHeader) {
         if (authHeader == null || !authHeader.startsWith("Bearer ")) return Optional.empty();
 
-        String token = authHeader.substring(7);
+        return getUserByAccessToken(authHeader.substring(7));
+    }
+
+    public Optional<User> getUserByAccessToken(String token) {
         if (!jwtUtil.validateToken(token)) return Optional.empty();
 
         String username = jwtUtil.extractUsername(token);

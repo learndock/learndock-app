@@ -1,4 +1,4 @@
-import { name, version } from "../../package.json";
+import { name, version, appPort } from "../../package.json";
 import { fetchIsAuthenticated } from "../service/Auth.service";
 import { ping } from "../service/System.service";
 import { getSelf } from "../service/User.service";
@@ -10,6 +10,7 @@ interface GlobalEnvironment {
     isProduction: boolean;
     environment: "development" | "production";
     connection: "unknown" | boolean;
+    proxyPort: number;
 }
 
 export const GLOBAL: GlobalEnvironment = {
@@ -18,7 +19,8 @@ export const GLOBAL: GlobalEnvironment = {
     isDevelopment: import.meta.env.DEV,
     isProduction: import.meta.env.PROD,
     environment: import.meta.env.MODE as "development" | "production",
-    connection: "unknown"
+    connection: "unknown",
+    proxyPort: appPort
 }
 
 export function printEnvironmentInfo() {

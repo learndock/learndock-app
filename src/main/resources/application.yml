@@ -13,6 +13,12 @@ spring:
     url: "jdbc:h2:file:./data/db"
     username: "sa"
     password: ""
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+        web-default-url: jdbc:h2:file:./data/db
   jpa:
     hibernate:
       ddl-auto: update
@@ -56,3 +62,8 @@ logging:
     com.zaxxer: ERROR
     org.jline: ERROR
     com.ij11.chatbot: INFO
+
+server:
+  error:
+    whitelabel:
+      enabled: false

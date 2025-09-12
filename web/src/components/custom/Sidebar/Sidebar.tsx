@@ -1,9 +1,12 @@
 import 'react-tooltip/dist/react-tooltip.css';
 import { sidebarItems } from "../../../config/Sidebar.config.ts";
 import SidebarItem from "./SidebarItem";
+import { useUser } from '../../../hooks/User.hooks.ts';
 
 export default function Sidebar({ locked }: { locked: boolean }) {
     const isExpanded = locked;
+
+    const { user } = useUser();
 
     return (
         <aside
@@ -12,16 +15,18 @@ export default function Sidebar({ locked }: { locked: boolean }) {
         >
             {/* Scrollable Container */}
             <div
-                className={`h-full overflow-y-auto ${
-                    isExpanded
-                        ? "scrollbar-thin scrollbar-thumb-borders scrollbar-track-transparent"
-                        : "scrollbar-none"
-                }`}
+                className={`h-full overflow-y-auto ${isExpanded
+                    ? "scrollbar-thin scrollbar-thumb-borders scrollbar-track-transparent"
+                    : "scrollbar-none"
+                    }`}
             >
                 <nav className="flex flex-col gap-1 px-2 pt-2">
-                    {sidebarItems.map((item, index) => (
-                        <SidebarItem key={index} {...item} expanded={isExpanded} />
-                    ))}
+                    {sidebarItems.map((item) => {
+                        if (item.onlyRoles && !user) return null;
+                        if (item.onlyRoles && !item.onlyRoles.some(role => user?.roles.includes(role))) return null;
+
+                        return <SidebarItem key={item.label} {...item} expanded={isExpanded} />;
+                    })}
                 </nav>
             </div>
         </aside>

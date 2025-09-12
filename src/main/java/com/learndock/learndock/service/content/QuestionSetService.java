@@ -16,7 +16,7 @@ public class QuestionSetService {
     private final QuestionSetRepository questionSetRepository;
 
     public List<QuestionSet> getByCatalogId(Long catalogId) {
-        return questionSetRepository.findByCatalogId(catalogId);
+        return questionSetRepository.findByCatalog_Id(catalogId);
     }
 
     public Optional<QuestionSet> getById(Long id) {

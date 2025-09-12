@@ -1,0 +1,159 @@
+{
+  "2.1": {
+    "name": "Informieren und Beraten von Kunden und Kundinnen",
+    "themen": {
+      "2.1.01": {
+        "name": "Aktives Zuhören, Kommunikationsmodelle und Verkaufsgespräche (Anfrage, Angebot, Auftrag), Analyse der Kundenbedürfnisse",
+        "themenkreise": [
+          "KEIN THEMENKREIS ANGEGEBEN"
+        ]
+      },
+      "2.1.02": {
+        "name": "Kundenbeziehungen unter Beachtung rechtlicher Regelungen und betrieblicher Grundsätze gestalten",
+        "themenkreise": [
+          "AGB-Gesetz",
+          "BGB/HGB",
+          "Compliance",
+          "Customer Relationship Management",
+          "Gesetz gegen unlauteren Wettbewerb",
+          "Regelkonformität"
+        ]
+      },
+      "2.1.03": {
+        "name": "Daten und Sachverhalte interpretieren, multimedial aufbereiten und situationsgerecht präsentieren",
+        "themenkreise": [
+          "Corporate Identity (CI)",
+          "Grafische Darstellung (Diagrammarten, Bilderbearbeitung, Videos, multimediale Aufbereitung)",
+          "Programm zum Erstellen multimedialer Inhalte",
+          "Präsentationsprogramm",
+          "Präsentationstechnik",
+          "Tabellenkalkulation",
+          "Visualisierung"
+        ]
+      }
+    }
+  },
+  "2.2": {
+    "name": "Entwickeln, Erstellen und Betreuen von IT-Lösungen",
+    "themen": {
+      "2.2.01": {
+        "name": "Fehler erkennen, analysieren und beheben",
+        "themenkreise": [
+          "Debugging, Breakpoint",
+          "Komponententest, Integrationstest, Systemtest",
+          "Software-Test, dynamische und statische Testverfahren, z.B. Black Box, White Box, Review, Extremwertetest",
+          "Testdaten",
+          "Versionsmanagement des Quellcodes"
+        ]
+      },
+      "2.2.02": {
+        "name": "Algorithmen formulieren und Programme entwickeln",
+        "themenkreise": [
+          "Abbildung der Kontrollstrukturen mittels Aktivitätsdiagramm oder Pseudocode als didaktisches Hilfsmittel",
+          "Entwurf der Bildschirmausgabemasken (Softwareergonomie, Barrierefreiheit)",
+          "UML (Use-Case-, Klassendiagramm, Aktivitätsdiagramm)"
+        ]
+      },
+      "2.2.03": {
+        "name": "Datenbanken modellieren und erstellen",
+        "themenkreise": [
+          "Abfrage über mehrere Tabellen",
+          "Aggregat-Funktionen",
+          "Anomalien/Redundanzen erkennen",
+          "Ausdrücke und Bedingungen",
+          "Datenbankabfrage, Datenpflege",
+          "Datentypen: Boolesche Werte, Ganzzahl, Gleitkommawerte, Währung, Datumswerte, Texte fester und variabler Länge, BLOB, Geokoordinaten",
+          "ER-Modell, Attribute, Beziehungen, Kardinalitäten, referenzielle Integrität, Aktualisierungsweitergabe, Löschweitergabe, Primärschlüssel, Fremdschlüssel",
+          "Normalisieren, 1. bis 3. Normalform",
+          "OpenData, API-Schnittstellen",
+          "Relationale und nicht-relationale Datenbanken, NoSQL-Datenbanken",
+          "SQL: Tabellenstruktur, Index, Manipulation, Projektion, Selektion, Sortieren, Gruppieren"
+        ]
+      }
+    }
+  },
+  "2.3": {
+    "name": "Durchführen und Dokumentieren von qualitätssichernden Maßnahmen",
+    "themen": {
+      "2.3.01": {
+        "name": "Methoden der Qualitätslenkung anwenden",
+        "themenkreise": [
+          "Debugging, Ablaufverfolgung",
+          "Software-Test, dynamische und statische Testverfahren (z.B. Black Box, White Box, Review, Extremwertetest, Testdaten, Last- und Performancetest)",
+          "Verschiedene Prüfverfahren, z.B. Parität, Redundanz"
+        ]
+      },
+      "2.3.02": {
+        "name": "Methoden zur Messung der Zielerreichung im QM-Prozess kennen und anwenden",
+        "themenkreise": [
+          "Abnahmeprotokoll",
+          "Soll-Ist-Vergleich, Abweichungen erkennen und berechnen",
+          "Testdatengeneratoren",
+          "Testprotokolle",
+          "Verbesserungsprozess, PDCA-Zyklus, KVP, Kennzahlen"
+        ]
+      }
+    }
+  },
+  "2.4": {
+    "name": "Umsetzen, Integrieren und Prüfen von Maßnahmen zur IT-Sicherheit und zum Datenschutz",
+    "themen": {
+      "2.4.01": {
+        "name": "Schadenspotenziale von IT-Sicherheitsvorfällen einschätzen und Schäden verhindern können",
+        "themenkreise": [
+          "Datenverlust",
+          "Imageschaden",
+          "Wirtschaftlicher Schaden"
+        ]
+      },
+      "2.4.02": {
+        "name": "Präventive IT-Sicherheitsmaßnahmen für verschiedene Bedrohungsszenarien planen und umsetzen",
+        "themenkreise": [
+          "Maßnahmen gegen Datendiebstahl",
+          "Maßnahmen gegen Identitätsdiebstahl (Phishing)",
+          "Maßnahmen gegen digitale Erpressung (Ransomware)"
+        ]
+      },
+      "2.4.03": {
+        "name": "Ziele zur Entwicklung von IT-Sicherheitskriterien definieren",
+        "themenkreise": [
+          "Objektive Bewertung der Systeme (IT-Grundschutzmodellierung)",
+          "Richtschnur für Entwickler",
+          "Unterstützung von Anwendern/Benutzern bei der Auswahl eines geeigneten IT-Sicherheitsprodukts (Security by Design)"
+        ]
+      },
+      "2.4.04": {
+        "name": "Kunden zur IT-Sicherheit beraten",
+        "themenkreise": [
+          "Bedrohungsszenarien, z.B. Man-in-the-Middle, SQL-Injection, DDoS-Attack",
+          "Private Haushalte",
+          "Qualitätsanforderungen",
+          "Rahmenbedingungen: technologisch, organisatorisch, rechtlich, ethisch",
+          "Risikoanalyse",
+          "Technisch-organisatorische Maßnahmen (TOM)",
+          "Unternehmen (intern, extern)",
+          "Öffentliche Hand - Funktionale Anforderungen"
+        ]
+      },
+      "2.4.05": {
+        "name": "Verschiedene Tools zur Überprüfung von IT-Sicherheitsmaßnahmen erläutern",
+        "themenkreise": [
+          "Device Security Check",
+          "Identity & Access Management",
+          "Penetrations-Test",
+          "Schwachstellenanalyse"
+        ]
+      },
+      "2.4.06": {
+        "name": "Wirksamkeit und Effizienz der umgesetzten Technisch-organisatorischen Maßnahmen (TOM) zur IT-Sicherheit und zum Datenschutz prüfen",
+        "themenkreise": [
+          "Compliance Reports",
+          "Log Management",
+          "Zugangskontrolle, z.B. Bildschirmschoner mit Passwortschutz, biometrische Verfahren, Magnet- oder Chipkarte",
+          "Zugriffskontrolle, z.B. Verschlüsselung von Datenträgern, Löschung von Datenträgern, User/Rollenkonzept",
+          "Zutrittskontrolle, z.B. Alarmanlage, Videoüberwachung, Besucherausweise"
+        ]
+      }
+    }
+  }
+}

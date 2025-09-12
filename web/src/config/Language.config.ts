@@ -1,6 +1,12 @@
 import i18n from "i18next";
 
 export const LanguageKey = {
+    COMMON_SEE_MORE: "common.see.more",
+    COMMON_SEARCH_PLACEHOLDER: "common.search.placeholder",
+    COMMON_ADD: "common.add",
+    COMMON_BACK: "common.back",
+    COMMON_UNKNOWN: "common.unknown",
+
     ERROR_PAGE_NOT_FOUND: "error.page_not_found",
     ERROR_UNEXPECTED: "error.unexpected",
     AUTH_USERNAME: "auth.username",
@@ -40,6 +46,7 @@ export const LanguageKey = {
     SIDEBAR_CATALOGS: "sidebar.catalogs",
     SIDEBAR_SAVED: "sidebar.saved",
     SIDEBAR_HISTORY: "sidebar.history",
+    SIDEBAR_TECHNICAL: "sidebar.technical",
 
     NOTIFICATIONS_PLEASE_LOGIN: "notifications.please_login",
     NOTIFICATIONS_TITLE: "notifications.title",
@@ -52,15 +59,9 @@ export const LanguageKey = {
 
     HOMEPAGE_WELCOME: "Welcome to LearnDock!",
 
-    COMMON_SEE_MORE: "common.see.more",
-    COMMON_SEARCH_PLACEHOLDER: "common.search.placeholder",
-    COMMON_ADD: "common.add",
-
     CATALOG_OVERVIEW_TITLE: "catalog.overview.title",
     CATALOG_OVERVIEW_SHORT_DESCRIPTION: "catalog.overview.short_description",
     CATALOG_NO_CATALOGS: "catalog.no_catalogs",
-
-
     CATALOG_DETAIL_NOT_FOUND: "catalog.detail.not_found",
     CATALOG_DETAIL_NO_DESCRIPTION: "catalog.detail.no_description",
     CATALOG_DETAIL_CREATED_AT: "catalog.detail.created_at",
@@ -71,10 +72,9 @@ export const LanguageKey = {
     CATALOG_DETAIL_VIEW_QUESTION_SET: "catalog.detail.view_question_set",
     CATALOG_DETAIL_QUESTION_SET_TITLE: "catalog.detail.question_set_title",
     CATALOG_DETAIL_LOCATION: "catalog.detail.location",
-    CATALOG_DETAIL_FIELDS: "catalog.detail.fields",
-
-    COMMON_BACK: "common.back",
-    COMMON_UNKNOWN: "common.unknown",
+    CATALOG_DETAIL_LEARNING_FIELDS: "catalog.detail.learning_fields",
+    CATALOG_DETAIL_QUESTION_SET_VIEW_EXAMPLES: "catalog.detail.question_set.view_examples",
+    CATALOG_DETAIL_COMPETENCE_VIEW: "catalog.detail.competence.view",
 } as const;
 
 export type LanguageKeyType = keyof typeof LanguageKey;

@@ -21,4 +21,11 @@ public class ResourceInfoController {
     public ResponseEntity<HardwareStats> getHardwareStats(@RequestHeader(value = HttpHeaders.AUTHORIZATION, required = false) String authHeader) {
         return ResponseEntity.of(resourceInfoService.getHardwareStats());
     }
+
+    @GetMapping("/getDatabaseFileSize")
+    public ResponseEntity<Long> getDatabaseFileSize() {
+        return resourceInfoService.getDatabaseFileSizeInKB()
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.internalServerError().build());
+    }
 }

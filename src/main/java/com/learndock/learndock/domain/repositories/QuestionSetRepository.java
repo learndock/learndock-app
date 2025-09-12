@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface QuestionSetRepository extends JpaRepository<QuestionSet, Long> {
-    List<QuestionSet> findByCatalogId(Long catalogId);
+    List<QuestionSet> findByCatalog_Id(Long catalogId);
 }
