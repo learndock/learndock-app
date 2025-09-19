@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { getStorageValue } from "../../../../storage/StorageProvider";
+import { getStorageValue } from "../../../storage/StorageProvider";
 
-export const ThemeToggle: React.FC<{ onToggle: (dark: boolean) => void }> = ({ onToggle }) => {
+export const ThemeToggle: React.FC<{ onToggle?: (dark: boolean) => void }> = ({ onToggle }) => {
   const [dark, setDark] = useState(getStorageValue("fallbackTheme") == "dark");
 
   useEffect(() => {
@@ -11,7 +11,7 @@ export const ThemeToggle: React.FC<{ onToggle: (dark: boolean) => void }> = ({ o
 
   const handleClick = () => {
     setDark(prev => !prev);
-    onToggle(dark);
+    onToggle?.(dark);
   };
 
   return (

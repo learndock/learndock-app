@@ -8,6 +8,7 @@ module.exports = {
         "cards": 'var(--color-cards)',
         "borders": 'var(--color-borders)',
         "accent": 'var(--color-accent)',
+        "secondary-accent": 'var(--color-secondary-accent)',
 
         "text-primary": 'var(--color-text-primary)',
         "text-secondary": 'var(--color-text-secondary)',

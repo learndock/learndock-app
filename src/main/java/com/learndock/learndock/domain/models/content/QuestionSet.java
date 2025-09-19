@@ -23,7 +23,7 @@ public class QuestionSet {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column
     private Long number;
 
     @Column(nullable = false)
@@ -43,6 +43,9 @@ public class QuestionSet {
 
     @OneToMany(mappedBy = "questionSet", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<QuestionSetExample> examples = new ArrayList<>();
+
+    @OneToMany(mappedBy = "questionSet", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Topic> topics = new ArrayList<>();
 
     @JsonProperty("catalogId")
     public Long getCatalogId() {

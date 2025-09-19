@@ -1,6 +1,9 @@
 package com.learndock.learndock.api.controller.content;
 
+import com.learndock.learndock.api.dto.content.CreateTopicRequest;
 import com.learndock.learndock.core.annotations.Roles;
+import com.learndock.learndock.domain.models.content.Catalog;
+import com.learndock.learndock.domain.models.content.QuestionSet;
 import com.learndock.learndock.domain.models.content.Topic;
 import com.learndock.learndock.domain.models.users.UserRole;
 import com.learndock.learndock.service.content.TopicService;
@@ -29,18 +32,44 @@ public class TopicController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    @Roles(UserRole.MANAGE_TOPICS)
-    @PostMapping
-    public Topic create(@RequestBody Topic Topic) {
-        return topicService.create(Topic);
+    @GetMapping("/{id}/catalog")
+    public ResponseEntity<Catalog> getRootCatalog(@PathVariable Long id) {
+        return topicService.getById(id)
+                .map(Topic::getQuestionSet)
+                .map(QuestionSet::getCatalog)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @Roles(UserRole.MANAGE_TOPICS)
-    @PutMapping("/{id}")
-    public ResponseEntity<Topic> updateTitle(@PathVariable Long id, @RequestBody String title) {
-        return topicService.updateTitle(id, title)
+    @PostMapping
+    public ResponseEntity<Topic> create(@RequestBody CreateTopicRequest request) {
+        return topicService
+                .create(
+                        request.getQuestionSetId(),
+                        request.getTitle()
+                )
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @Roles(UserRole.MANAGE_TOPICS)
+    @PatchMapping("/{id}")
+    public ResponseEntity<Topic> update(@PathVariable Long id, @RequestBody Topic topic) {
+        return topicService.update(id, topic)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/search")
+    public List<Topic> search(
+            @RequestParam String query,
+            @RequestParam(required = false) Long catalogId
+    ) {
+        if (catalogId != null) {
+            return topicService.searchByCatalog(catalogId, query);
+        }
+        return topicService.search(query, 100);
     }
 
     @Roles(UserRole.MANAGE_TOPICS)

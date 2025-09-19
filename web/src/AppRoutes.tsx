@@ -1,5 +1,5 @@
-import { Route, Routes } from "react-router";
-import { useState } from "react";
+import { Route, Routes, useLocation } from "react-router";
+import { useEffect, useState } from "react";
 import { getStorageValue, setStorageValue } from "./storage/StorageProvider";
 import Sidebar from "./components/custom/Sidebar/Sidebar";
 import Navbar from "./components/custom/Navbar/Navbar";
@@ -9,13 +9,31 @@ import CatalogOverviewPage from "./pages/CatalogOverview.page";
 import CatalogDetailPage from "./pages/CatalogDetail.page";
 import TechnicalDashboard from "./pages/TechnicalDashboard.page";
 import CompetenceDetailPage from "./pages/ComptetenceDetail.page";
+import GenericErrorPage from "./pages/error/GenericErrorPage";
 
 export default function AppRoutes() {
+    const location = useLocation();
+    const [errorCode, setErrorCode] = useState<string>("");
     const [sidebarLocked, setSidebarLocked] = useState<boolean>(getStorageValue("sidebarLocked") as boolean);
+
+    useEffect(() => {
+        fetch(window.location.pathname, { method: "HEAD" })
+            .then((res) => {
+                const code = res.headers.get("X-Frontend-Error-Code");
+                if (code) setErrorCode(code);
+                else setErrorCode("");
+            })
+            .catch(() => setErrorCode("500"));
+    }, [location]);
 
     function changeSidebarLock(locked: boolean) {
         setSidebarLocked(locked);
         setStorageValue("sidebarLocked", locked);
+    }
+
+    if (errorCode) {
+        console.log(location, errorCode)
+        return <GenericErrorPage errorCode={errorCode} />
     }
 
     return (
@@ -30,8 +48,9 @@ export default function AppRoutes() {
                         <Route path="*" element={<NotFoundPage />} />
                         <Route path="/technical" element={<TechnicalDashboard />} />
                         <Route path="/catalog" element={<CatalogOverviewPage />} />
-                        <Route path="/catalog/:catalogIdParam" element={<CatalogDetailPage />} />
+                        <Route path="/catalog/:catalogIdParam/:mode?" element={<CatalogDetailPage />} />
                         <Route path="/competence/:competenceIdParam" element={<CompetenceDetailPage />} />
+                        <Route path="/competence/:competenceIdParam/:mode?" element={<CompetenceDetailPage />} />
                     </Routes>
                 </main>
             </div>

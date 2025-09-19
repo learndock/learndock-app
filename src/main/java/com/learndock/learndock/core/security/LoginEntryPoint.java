@@ -30,6 +30,6 @@ public class LoginEntryPoint implements AuthenticationEntryPoint {
     public void commence(@NonNull HttpServletRequest request,
                          @NonNull HttpServletResponse response,
                          @NonNull AuthenticationException authException) throws IOException {
-        response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized");
+        response.sendError(HttpServletResponse.SC_FORBIDDEN, "Unauthorized");
     }
 }

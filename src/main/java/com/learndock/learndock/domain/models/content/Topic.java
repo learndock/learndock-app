@@ -31,4 +31,11 @@ public class Topic {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "question_set_id")
     private QuestionSet questionSet;
+
+    @PreRemove
+    private void removeTopicsFromCompetences() {
+        for (Competence competence : competences) {
+            competence.getTopics().remove(this);
+        }
+    }
 }

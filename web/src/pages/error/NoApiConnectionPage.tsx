@@ -1,8 +1,9 @@
 import React from 'react';
 import BouncingReloadButton from '../../components/custom/Error/API/BouncingReloadButton';
-import { ThemeToggle } from '../../components/custom/Error/API/ThemeToggle';
+import { ThemeToggle } from '../../components/custom/Error/ThemeToggle';
 import { NoConnectionBanner } from '../../components/custom/Error/API/NoConnectionBanner';
-import { FAQSection } from '../../components/custom/Error/API/FAQSection';
+import { FAQSection } from '../../components/custom/Error/FAQSection';
+import { noApiConnectionConfig } from '../../config/Errors.config';
 
 const NoApiConnectionPage: React.FC = () => {
   const [clicks, setClicks] = React.useState(0);
@@ -16,7 +17,7 @@ const NoApiConnectionPage: React.FC = () => {
       )}
       <ThemeToggle onToggle={() => setClicks((prev) => prev + 1)} />
       <NoConnectionBanner />
-      <FAQSection showExtra={activateButton} />
+      <FAQSection config={noApiConnectionConfig} showSpecial={activateButton} />
     </div>
   );
 };

@@ -102,6 +102,12 @@
             <version>3.2.2</version>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
             <groupId>io.github.classgraph</groupId>
             <artifactId>classgraph</artifactId>
             <version>4.8.162</version>
@@ -112,14 +118,6 @@
             <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
-
-        <!-- Modules -->
-        <dependency>
-            <groupId>com.timonmdy</groupId>
-            <artifactId>xami-core</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
     </dependencies>
 
     <build>

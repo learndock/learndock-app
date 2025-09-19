@@ -1,26 +1,26 @@
 import { useEffect, useState } from "react";
 import { FiLoader } from "react-icons/fi";
 import { MdAdd } from "react-icons/md";
-import { useQuery } from "react-query";
 import CatalogCard from "../components/custom/Content/Catalog/CatalogCard";
+import { AddCatalogModal } from "../components/custom/Content/Catalog/Modals/AddCatalogModal";
 import ActionButton from "../components/lib/Buttons/Action.Button";
 import SearchBar from "../components/lib/Form/SearchBar";
+import { useCatalogs } from "../hooks/Content.hooks";
 import { useLang } from "../hooks/Language.hooks";
 import { useUser } from "../hooks/User.hooks";
-import { getCatalogList } from "../service/content/Catalog.service";
 
 
 export default function CatalogOverviewPage() {
     const lang = useLang();
 
-    const { data: catalogs, isLoading } = useQuery("catalogs", () => {
-        return getCatalogList();
-    });
+    const { listQuery } = useCatalogs();
+    const { data: catalogs, isLoading } = listQuery;
 
     const { user, isUserLoading } = useUser();
 
     const [searchInput, setSearchInput] = useState("");
     const [filteredCatalogs, setFilteredCatalogs] = useState(catalogs);
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
     useEffect(() => {
         if (catalogs) {
@@ -62,18 +62,19 @@ export default function CatalogOverviewPage() {
                     </div>
                     {user?.roles.includes("MANAGE_CATALOGS") && (
                         <div className="w-[20%] flex ml-6 justify-end">
-                            <ActionButton icon={MdAdd}>{lang('COMMON_ADD')}</ActionButton>
+                            <ActionButton icon={MdAdd} onClick={() => setIsModalOpen(true)}>{lang('COMMON_ADD')}</ActionButton>
                         </div>
                     )}
                 </div>
                 {filteredCatalogs != null && filteredCatalogs.length > 0 ? (
                     filteredCatalogs.map((catalog) => (
-                        <CatalogCard catalog={catalog} />
+                        <CatalogCard key={catalog.id} catalog={catalog} />
                     ))
                 ) : (
                     <div className="text-text-primary text-center mt-6">{lang('CATALOG_NO_CATALOGS')}</div>
                 )}
             </div>
+            <AddCatalogModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </div>
     )
 }

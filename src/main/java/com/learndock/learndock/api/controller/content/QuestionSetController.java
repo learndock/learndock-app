@@ -1,5 +1,6 @@
 package com.learndock.learndock.api.controller.content;
 
+import com.learndock.learndock.api.dto.content.CreateQuestionSetRequest;
 import com.learndock.learndock.core.annotations.Roles;
 import com.learndock.learndock.domain.models.content.QuestionSet;
 import com.learndock.learndock.domain.models.users.UserRole;
@@ -31,12 +32,19 @@ public class QuestionSetController {
 
     @Roles(UserRole.MANAGE_QUESTION_SETS)
     @PostMapping
-    public QuestionSet create(@RequestBody QuestionSet questionSet) {
-        return questionSetService.create(questionSet);
+    public ResponseEntity<QuestionSet> create(@RequestBody CreateQuestionSetRequest request) {
+        return questionSetService.create(
+                        request.getCatalogId(),
+                        request.getTitle(),
+                        request.getLocationInRegulation(),
+                        request.getRelatedLearningFields()
+                )
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @Roles(UserRole.MANAGE_QUESTION_SETS)
-    @PutMapping("/{id}")
+    @PatchMapping("/{id}")
     public ResponseEntity<QuestionSet> update(@PathVariable Long id, @RequestBody QuestionSet questionSet) {
         return questionSetService.update(id, questionSet)
                 .map(ResponseEntity::ok)

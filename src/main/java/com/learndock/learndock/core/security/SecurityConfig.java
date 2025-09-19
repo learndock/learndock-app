@@ -66,7 +66,6 @@ public class SecurityConfig {
                 )
                 .exceptionHandling(
                         exception -> exception
-                                .accessDeniedPage("/access-denied.html")
                                 .authenticationEntryPoint(new LoginEntryPoint())
                 )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))

@@ -24,9 +24,9 @@ export const AccordionItem = ({
         <div className={`${className}`}>
             <button
                 onClick={() => setOpen(!open)}
-                className="w-full flex justify-between items-center py-4 px-4 bg-cards hover:bg-accent transition"
+                className="w-full flex justify-between items-center py-4 px-4 bg-zinc-800 transition"
             >
-                <span className={`text-left font-medium text-text-primary ${titleClassName}`}>
+                <span className={`text-left font-medium text-white ${titleClassName}`}>
                     {title}
                 </span>
                 <FaChevronDown
@@ -34,7 +34,7 @@ export const AccordionItem = ({
                 />
             </button>
             {open && (
-                <div className={`px-4 pb-4 text-text-secondary ${contentClassName}`}>
+                <div className={`px-4 pb-4 ${contentClassName}`}>
                     {children}
                 </div>
             )}
@@ -51,7 +51,7 @@ export const Accordion = ({
 }) => (
     <div
         className={`w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl 
-      bg-white/80 dark:bg-[#1e1e1e]/90 backdrop-blur-md 
+      bg-white/80 dark:bg-[#1e1e1e]/90 backdrop-blur-md text-white
       border border-gray-200 dark:border-[#1e1e1e]
       divide-y divide-borders ${className}`}
       data-avoid

@@ -22,7 +22,6 @@ export default function CatalogCard({ catalog }: CatalogCardProps) {
 
   return (
     <div
-      key={catalog.id}
       className="p-4 rounded-lg text-text-primary transition-colors duration-300 flex justify-between items-center cursor-pointer"
       style={{ backgroundColor }}
       onClick={() => navigate(`/catalog/${catalog.id}`)}

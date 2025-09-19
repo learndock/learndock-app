@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { MdCheck } from 'react-icons/md';
 
 function syntaxHighlight(json: string) {
-    return json.replace(/(&|\"|<|>)/g, (match) => {
+    return json.replace(/(&|"|<|>)/g, (match) => {
         switch (match) {
             case '&': return '&amp;';
             case '<': return '&lt;';
@@ -20,7 +20,7 @@ function syntaxHighlight(json: string) {
             else if (/true/.test(match)) cls = 'text-purple-600 dark:text-purple-400';
             else if (/false/.test(match)) cls = 'text-red-600 dark:text-red-400';
             else if (/null/.test(match)) cls = 'text-gray-600 dark:text-gray-400';
-            else if (/\"/.test(match)) cls = 'text-orange-600 dark:text-orange-400';
+            else if (/"/.test(match)) cls = 'text-orange-600 dark:text-orange-400';
             else if (/^-?\d/.test(match)) cls = 'text-blue-600 dark:text-blue-400';
             return `<span class="${cls}">${match}</span>`;
         }

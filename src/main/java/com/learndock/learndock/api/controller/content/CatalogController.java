@@ -23,8 +23,10 @@ public class CatalogController {
     }
 
     @GetMapping("/{id}")
-    public Catalog getById(@PathVariable Long id) {
-        return service.getById(id);
+    public ResponseEntity<Catalog> getById(@PathVariable Long id) {
+        return service.getById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @Roles(UserRole.MANAGE_CATALOGS)
@@ -41,14 +43,10 @@ public class CatalogController {
     }
 
     @Roles(UserRole.MANAGE_CATALOGS)
-    @PatchMapping("/{id}/title")
-    public ResponseEntity<Catalog> updateTitle(@PathVariable Long id, @RequestBody String title) {
-        return ResponseEntity.ok(service.updateTitle(id, title));
-    }
-
-    @Roles(UserRole.MANAGE_CATALOGS)
-    @PatchMapping("/{id}/description")
-    public ResponseEntity<Catalog> updateDescription(@PathVariable Long id, @RequestBody String description) {
-        return ResponseEntity.ok(service.updateDescription(id, description));
+    @PatchMapping("/{id}")
+    public ResponseEntity<Catalog> update(@PathVariable Long id, @RequestBody Catalog catalog) {
+        return service.update(id, catalog)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 }

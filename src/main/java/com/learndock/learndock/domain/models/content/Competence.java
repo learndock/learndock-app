@@ -1,6 +1,6 @@
 package com.learndock.learndock.domain.models.content;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,7 +16,6 @@ import java.util.List;
 @Table(name = "competence")
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonIgnoreProperties({"topics"})
 public class Competence {
 
     @Id
@@ -35,6 +34,7 @@ public class Competence {
             joinColumns = @JoinColumn(name = "competence_id"),
             inverseJoinColumns = @JoinColumn(name = "topic_id")
     )
+    @JsonIgnore
     private List<Topic> topics;
 
     @Column

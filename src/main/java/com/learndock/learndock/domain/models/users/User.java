@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @Setter
@@ -30,7 +31,7 @@ public class User {
     @Enumerated(EnumType.STRING)
     @CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
     @Column(name = "role")
-    private Set<UserRole> roles;
+    private Set<UserRole> roles = new HashSet<>();
 
     public boolean hasRole(UserRole role) {
         return this.roles.stream().anyMatch(userRole -> userRole.equals(role));

@@ -34,3 +34,19 @@ export interface Competence {
   createdAt?: string; // ISO string
   updatedAt?: string; // ISO string
 }
+
+////////////////
+/// REQUESTS ///
+////////////////
+
+export interface CreateQuestionSetRequest {
+  catalogId: number;
+  title: string;
+  locationInRegulation?: string;
+  relatedLearningFields?: string[];
+}
+
+export interface CreateTopicRequest {
+  questionSetId: number;
+  title: string;
+}

@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -20,9 +21,8 @@ public class CatalogService {
         return repository.findAll();
     }
 
-    public Catalog getById(Long id) {
-        return repository.findById(id)
-                .orElseThrow(() -> new CatalogNotFoundException(id));
+    public Optional<Catalog> getById(Long id) {
+        return repository.findById(id);
     }
 
     public Catalog add(Catalog catalog) {
@@ -32,23 +32,17 @@ public class CatalogService {
     }
 
     public void remove(Long id) {
-        if (!repository.existsById(id)) {
-            throw new CatalogNotFoundException(id);
-        }
-        repository.deleteById(id);
+        Catalog catalog = repository.findById(id)
+                .orElseThrow(() -> new CatalogNotFoundException(id));
+        repository.delete(catalog);
     }
 
-    public Catalog updateTitle(Long id, String title) {
-        Catalog catalog = getById(id);
-        catalog.setTitle(title);
-        catalog.setUpdatedAt(new Date());
-        return repository.save(catalog);
-    }
-
-    public Catalog updateDescription(Long id, String description) {
-        Catalog catalog = getById(id);
-        catalog.setDescription(description);
-        catalog.setUpdatedAt(new Date());
-        return repository.save(catalog);
+    public Optional<Catalog> update(Long id, Catalog newCatalog) {
+        return repository.findById(id).map(existing -> {
+            existing.setTitle(newCatalog.getTitle());
+            existing.setDescription(newCatalog.getDescription());
+            existing.setUpdatedAt(new Date());
+            return repository.save(existing);
+        });
     }
 }

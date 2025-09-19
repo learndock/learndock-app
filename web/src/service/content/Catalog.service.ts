@@ -13,8 +13,5 @@ export const addCatalog = (catalog: Partial<Catalog>): Promise<Catalog> =>
 export const removeCatalog = (id: number): Promise<void> =>
   FetchWrapper.delete<void>(`/api/catalogs/${id}`);
 
-export const updateCatalogTitle = (id: number, title: string): Promise<Catalog> =>
-  FetchWrapper.patch<Catalog>(`/api/catalogs/${id}/title`, title);
-
-export const updateCatalogDescription = (id: number, description: string): Promise<Catalog> =>
-  FetchWrapper.patch<Catalog>(`/api/catalogs/${id}/description`, description);
+export const updateCatalog = (id: number, catalog: Partial<Catalog>): Promise<Catalog> =>
+  FetchWrapper.patch<Catalog>(`/api/catalogs/${id}`, catalog);

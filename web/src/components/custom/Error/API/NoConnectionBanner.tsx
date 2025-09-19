@@ -31,7 +31,7 @@ export const NoConnectionBanner = () => {
   performPing();
 
   return (
-    <div className="w-full flex justify-center pt-10 pb-6 bg-error dark:text-white text-black">
+    <div className="w-full flex justify-center pt-10 pb-6 dark:text-white text-black">
       <div className="flex flex-col items-center gap-6">
         <div className='flex flex-col items-center gap-8 font-bold text-5xl bg-gradient-to-r from-red-600 to-amber-500 bg-clip-text text-transparent'>
           <HashLoader size={80} color={'#22d3ee'} />

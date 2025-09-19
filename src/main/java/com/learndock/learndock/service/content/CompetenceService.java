@@ -6,6 +6,8 @@ import com.learndock.learndock.domain.repositories.CompetenceRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -18,33 +20,58 @@ public class CompetenceService {
         return competenceRepository.findById(id);
     }
 
-    public Competence create(Competence Competence) {
-        return competenceRepository.save(Competence);
+    public List<Topic> getTopics(Competence competence) {
+        return competence.getTopics();
     }
 
-    public Optional<Competence> updateTitle(Long id, String newTitle) {
-        return competenceRepository.findById(id).map(existing -> {
-            existing.setTitle(newTitle);
-            return competenceRepository.save(existing);
-        });
+    public Competence create(Competence newCompetence) {
+        Competence competence = new Competence();
+
+        competence.setTitle(newCompetence.getTitle());
+        competence.setDescription(newCompetence.getDescription());
+        competence.setCreatedAt(new Date());
+        competence.setUpdatedAt(new Date());
+        competence.setTopics(newCompetence.getTopics());
+
+        return competenceRepository.save(competence);
     }
 
-    public Optional<Competence> updateDescription(Long id, String newDescription) {
+    public Optional<Competence> update(Long id, Competence newCompetence) {
         return competenceRepository.findById(id).map(existing -> {
-            existing.setDescription(newDescription);
+            existing.setTitle(newCompetence.getTitle());
+            existing.setDescription(newCompetence.getDescription());
+            existing.setUpdatedAt(new Date());
             return competenceRepository.save(existing);
         });
     }
 
     public void linkTopic(Long competenceId, Long topicId) {
-        Optional<Topic> topicOpt = topicService.getById(topicId);
-        if (topicOpt.isEmpty()) {
-            throw new IllegalArgumentException("Topic with ID " + topicId + " does not exist.");
-        }
+        Topic topic = topicService.getById(topicId)
+                .orElseThrow(() -> new IllegalArgumentException("Topic with ID " + topicId + " does not exist."));
 
-        competenceRepository.findById(competenceId).ifPresent(competence -> {
-            competence.getTopics().add(topicOpt.get());
-            competenceRepository.save(competence);
+        competenceRepository.findById(competenceId).ifPresentOrElse(competence -> {
+            if (!competence.getTopics().contains(topic)) {
+                competence.getTopics().add(topic);
+                competence.setUpdatedAt(new Date());
+                competenceRepository.save(competence);
+            }
+        }, () -> {
+            throw new IllegalArgumentException("Competence with ID " + competenceId + " does not exist.");
+        });
+    }
+
+    public void unlinkTopic(Long competenceId, Long topicId) {
+        Topic topic = topicService.getById(topicId)
+                .orElseThrow(() -> new IllegalArgumentException("Topic with ID " + topicId + " does not exist."));
+
+        competenceRepository.findById(competenceId).ifPresentOrElse(competence -> {
+            if (competence.getTopics().contains(topic)) {
+                competence.getTopics().remove(topic);
+                competence.setUpdatedAt(new Date());
+                competenceRepository.save(competence);
+            }
+        }, () -> {
+            throw new IllegalArgumentException("Competence with ID " + competenceId + " does not exist.");
         });
     }
 
