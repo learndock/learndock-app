@@ -13,6 +13,7 @@ import { useUser } from "../hooks/User.hooks";
 import { RiLockUnlockFill } from "react-icons/ri";
 import { useLang } from "../hooks/Language.hooks";
 import ActionButton from "../components/lib/Buttons/Action.Button";
+import { DeleteCompetenceModal } from "../components/custom/Content/Catalog/Modals/DeleteCompetenceModal";
 
 export default function CompetenceDetailPage() {
     const navigate = useNavigate();
@@ -36,6 +37,7 @@ export default function CompetenceDetailPage() {
 
     const [competence, setCompetence] = useState<Competence | null>(null);
     const [originalCompetence, setOriginalCompetence] = useState<Competence | null>(null);
+    const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
 
     useEffect(() => {
         if (competenceData) {
@@ -113,6 +115,7 @@ export default function CompetenceDetailPage() {
                 editMode={isEditMode}
                 onSave={handleSave}
                 onCancel={handleCancel}
+                onDelete={() => setIsDeleteModalOpen(true)}
             />
             <div className="flex flex-row gap-6 max-h-[30%]">
                 <div className="w-[35%]">
@@ -131,6 +134,14 @@ export default function CompetenceDetailPage() {
                     />
                 </div>
             </div>
+            <DeleteCompetenceModal
+                isOpen={isDeleteModalOpen}
+                competenceId={competence.id}
+                onClose={() => {
+                    setIsDeleteModalOpen(false);
+                    navigate("/competence");
+                }}
+            />
         </div>
     );
 }

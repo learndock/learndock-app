@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
-import {getStorageValue} from '../storage/StorageProvider';
+import {getStorageValue} from './StorageProvider';
 
 const language: string = getStorageValue("language") as string;
 

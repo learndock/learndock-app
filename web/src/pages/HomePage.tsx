@@ -1,5 +1,6 @@
 import { FiLoader } from "react-icons/fi";
 import { useLang } from "../hooks/Language.hooks";
+import SelfAssessmentRateCard from "../components/custom/Content/Comptence/SelfAssessmentRateCard";
 
 
 export default function HomePage() {
@@ -24,7 +25,7 @@ export default function HomePage() {
 
 
                 <div className="overflow-hidden">
-                    
+                    <SelfAssessmentRateCard />
                 </div>
             </div>
         </div>

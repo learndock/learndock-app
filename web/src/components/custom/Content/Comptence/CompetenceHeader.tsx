@@ -1,5 +1,5 @@
 import React from "react";
-import { FiEdit2, FiSave, FiX } from "react-icons/fi";
+import { FiEdit2, FiSave, FiTrash, FiX } from "react-icons/fi";
 import { HiOutlineClock } from "react-icons/hi";
 import { useNavigate } from "react-router";
 import { useLang } from "../../../../hooks/Language.hooks";
@@ -13,6 +13,7 @@ interface CompetenceHeaderProps {
     editMode: boolean;
     onSave: () => Promise<void>;
     onCancel: () => void;
+    onDelete: () => void;
 }
 
 export const CompetenceHeader: React.FC<CompetenceHeaderProps> = ({
@@ -20,7 +21,8 @@ export const CompetenceHeader: React.FC<CompetenceHeaderProps> = ({
     setCompetence,
     editMode,
     onSave,
-    onCancel
+    onCancel,
+    onDelete
 }) => {
     const navigate = useNavigate();
     const lang = useLang();
@@ -51,15 +53,24 @@ export const CompetenceHeader: React.FC<CompetenceHeaderProps> = ({
 
                 {user?.roles.includes("MANAGE_COMPETENCES") && (
                     <div className="flex flex-row items-center gap-2">
-                        {editMode &&
-                            <button
-                                className="px-5 py-2 rounded-lg bg-secondary-accent text-text-primary font-semibold shadow cursor-pointer transition flex flex-row items-center"
-                                onClick={onCancel}
-                            >
-                                <FiX className="inline mr-2" />
-                                {lang("COMMON_CANCEL")}
-                            </button>
-                        }
+                        {editMode && (
+                            <>
+                                <button
+                                    className="px-5 py-2 rounded-lg bg-secondary-accent text-text-primary font-semibold shadow cursor-pointer transition flex flex-row items-center"
+                                    onClick={onCancel}
+                                >
+                                    <FiX className="inline mr-2" />
+                                    {lang("COMMON_CANCEL")}
+                                </button>
+                                <button
+                                    className="px-5 py-2 rounded-lg bg-error text-text-primary font-semibold shadow cursor-pointer transition flex flex-row items-center"
+                                    onClick={onDelete}
+                                >
+                                    <FiTrash className="inline mr-2" />
+                                    {lang("COMMON_DELETE")}
+                                </button>
+                            </>
+                        )}
                         <button
                             className="px-5 py-2 rounded-lg bg-accent text-background font-semibold shadow cursor-pointer transition flex flex-row items-center"
                             onClick={() =>

@@ -21,3 +21,7 @@ export const updateCompetence = (id: number, competence: Partial<Competence>): P
 
 export const removeCompetence = (id: number): Promise<void> =>
   FetchWrapper.delete<void>(`/api/competences/${id}`);
+
+export const searchCompetences = (query: string): Promise<Competence[]> => {
+  return FetchWrapper.get<Competence[]>(`/api/competences/search?query=${encodeURIComponent(query)}`);
+};

@@ -14,7 +14,7 @@ export const useCatalogs = () => {
         mutationFn: (id: number) => removeCatalog(id),
         onSuccess: () => {
             listQuery.refetch();
-            navigate("/catalog")
+                        navigate("/catalog");
         },
     });
 

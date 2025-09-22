@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { getStorageValue } from "../../../storage/StorageProvider";
+import { getStorageValue } from "../../../core/StorageProvider";
 
 export const ThemeToggle: React.FC<{ onToggle?: (dark: boolean) => void }> = ({ onToggle }) => {
   const [dark, setDark] = useState(getStorageValue("fallbackTheme") == "dark");

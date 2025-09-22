@@ -1,5 +1,5 @@
 import { FetchWrapper } from "../core/FetchWrapper";
-import { getStorageValue } from "../storage/StorageProvider";
+import { getStorageValue } from "../core/StorageProvider";
 import { Theme } from "../types/Themes.types";
 export const getUserSelectedTheme = (): string => {
     const selectedTheme = getStorageValue("theme") as string;

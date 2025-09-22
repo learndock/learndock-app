@@ -1,5 +1,5 @@
 import React from "react";
-import {getStorageValue, setStorageValue} from "../../../../storage/StorageProvider.ts";
+import {getStorageValue, setStorageValue} from "../../../../core/StorageProvider.ts";
 import {useLang} from "../../../../hooks/Language.hooks.ts";
 import {useNavigate} from "react-router";
 import {BiCheck, BiPlus} from "react-icons/bi";

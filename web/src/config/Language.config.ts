@@ -13,6 +13,8 @@ export const LanguageKey = {
     COMMON_DELETE: "common.delete", //
     COMMON_DELETING: "common.deleting", //
     COMMON_UNKNOWN: "common.unknown",
+    COMMON_TITLE: "common.title",
+    COMMON_DESCRIPTION: "common.description",
 
     ERROR_PAGE_ROLE_PROTECTED_TITLE: "error.page_role_protected.title", //
     ERROR_PAGE_ROLE_PROTECTED_SUBTITLE: "error.page_role_protected.subtitle", //
@@ -55,11 +57,14 @@ export const LanguageKey = {
     NAVBAR_SELECT_THEME: "navbar.select.theme.title",
     NAVBAR_SELECT_MORE: "navbar.select.more",
 
+    SEARCH_RESULT_TYPE_CATALOG: "search.result.type.catalog", // 
+    SEARCH_RESULT_TYPE_COMPETENCE: "search.result.type.competence", //
+    SEARCH_RESULT_TYPE_TOPIC: "search.result.type.topic", //
+
     SIDEBAR_HOME: "sidebar.home",
     SIDEBAR_CATALOGS: "sidebar.catalogs",
-    SIDEBAR_SAVED: "sidebar.saved",
-    SIDEBAR_HISTORY: "sidebar.history",
-    SIDEBAR_TECHNICAL: "sidebar.technical", //
+    SIDEBAR_COMPETENCES: "sidebar.competences", //
+    SIDEBAR_TECHNICAL: "sidebar.technical",
 
     NOTIFICATIONS_PLEASE_LOGIN: "notifications.please_login",
     NOTIFICATIONS_TITLE: "notifications.title",
@@ -70,7 +75,7 @@ export const LanguageKey = {
     NOTIFICATION_MARK_AS_READ: "notification.mark_as_read",
     NOTIFICATION_DELETE: "notification.delete",
 
-    HOMEPAGE_WELCOME: "Der Klaubaustermann beklötert meine Klöten",
+    HOMEPAGE_WELCOME: "Willkommen bei LearnDock!",
 
     CATALOG_OVERVIEW_TITLE: "catalog.overview.title",
     CATALOG_OVERVIEW_SHORT_DESCRIPTION: "catalog.overview.short_description",
@@ -87,6 +92,7 @@ export const LanguageKey = {
     CATALOG_DETAIL_LEARNING_FIELDS: "catalog.detail.learning_fields",
     CATALOG_DETAIL_QUESTION_SET_VIEW_EXAMPLES: "catalog.detail.question_set.view_examples",
     CATALOG_DETAIL_COMPETENCE_VIEW: "catalog.detail.competence.view",
+    CATALOG_ADD_TITLE: "catalog.add.title", //
     CATALOG_DELETE_TITLE: "catalog.delete.title", //
     CATALOG_DELETE_CONFIRM: "catalog.delete.confirm", //
 
@@ -100,6 +106,7 @@ export const LanguageKey = {
 
     COMPETENCE_SELF_ASSESSMENT: "competence.self_assessment",
     COMPETENCE_SELF_ASSESSMENT_HISTORY: "competence.self_assessment.history",
+    COMPETENCE_SELF_ASSESSMENT_COMPLETED: "competence.self_assessment.completed",
     COMPETENCE_YOUR_CURRENT_ASSESSMENT: "competence.your_current_assessment",
     COMPETENCE_CLICK_TO_ADJUST: "competence.click_to_adjust",
     COMPETENCE_SEE_HISTORY: "competence.see_history",
@@ -114,6 +121,11 @@ export const LanguageKey = {
     COMPETENCE_ADD_TITLE: "competence.add.title", //
     COMPETENCE_DELETE_TITLE: "competence.delete.title", //
     COMPETENCE_DELETE_CONFIRM: "competence.delete.confirm", //
+
+    COMPETENCE_OVERVIEW_TITLE: "competence.overview.title", //
+    COMPETENCE_OVERVIEW_SHORT_DESCRIPTION: "competence.overview.short_description", //
+    COMPETENCE_NO_RESULTS: "competence.no_results", // 
+    COMPETENCE_SEARCH_TRUNCATED: "competence.search.truncated", //
 } as const;
 
 export type LanguageKeyType = keyof typeof LanguageKey;

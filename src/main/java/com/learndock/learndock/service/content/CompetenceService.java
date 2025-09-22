@@ -4,6 +4,7 @@ import com.learndock.learndock.domain.models.content.Competence;
 import com.learndock.learndock.domain.models.content.Topic;
 import com.learndock.learndock.domain.repositories.CompetenceRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -73,6 +74,14 @@ public class CompetenceService {
         }, () -> {
             throw new IllegalArgumentException("Competence with ID " + competenceId + " does not exist.");
         });
+    }
+
+    public List<Competence> search(String query, int limit) {
+        return competenceRepository.findByTitleContainingIgnoreCase(query, PageRequest.of(0, limit)).getContent();
+    }
+
+    public long countAll() {
+        return competenceRepository.count();
     }
 
     public boolean delete(Long id) {

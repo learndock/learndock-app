@@ -73,6 +73,13 @@ public class CompetenceController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @GetMapping("/search")
+    public List<Competence> search(
+            @RequestParam String query
+    ) {
+        return competenceService.search(query, 100);
+    }
+
     @Roles(UserRole.MANAGE_COMPETENCES)
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {

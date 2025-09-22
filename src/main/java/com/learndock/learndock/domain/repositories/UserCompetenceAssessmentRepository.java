@@ -12,4 +12,6 @@ public interface UserCompetenceAssessmentRepository extends JpaRepository<UserCo
     List<UserCompetenceAssessment> findByUserAndCompetence(User user, Competence competence);
 
     UserCompetenceAssessment findTopByUserAndCompetenceOrderByAssessmentDateDesc(User user, Competence competence);
+
+    long countDistinctCompetenceByUser(User user);
 }

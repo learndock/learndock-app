@@ -9,3 +9,6 @@ export const fetchLatestAssessmentForCompetence = (competenceId: number): Promis
 
 export const addAssessmentForCompetence = (request: AddAssessmentRequest): Promise<AddAssessmentResponse> => 
     FetchWrapper.post<AddAssessmentResponse>(`/api/assessments/competence/${request.competenceId}?assessmentValue=${request.assessmentValue}`,{});
+
+export const getSelfAssessmentRate = (): Promise<number> =>
+    FetchWrapper.get<number>(`/api/assessments/self-assessment-rate`);

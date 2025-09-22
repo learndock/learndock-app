@@ -1,5 +1,5 @@
 export interface SearchResult {
-    id: number;
+    id: string;
     title: string;
     file: string;
     content: string;

@@ -9,6 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Collections;
 import java.util.List;
 
@@ -60,4 +62,13 @@ public class UserCompetenceAssessmentController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
         }
     }
+
+    @Authenticated
+    @GetMapping("/self-assessment-rate")
+    public double getSelfAssessmentRate(User user) {
+        return BigDecimal.valueOf(assessmentService.getSelfAssessmentRate(user))
+                .setScale(2, RoundingMode.HALF_UP)
+                .doubleValue();
+    }
+
 }

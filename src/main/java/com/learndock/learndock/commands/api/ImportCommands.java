@@ -108,6 +108,12 @@ public class ImportCommands {
                     Topic topic = topicOptional.get();
 
                     for (JsonNode compNode : topicNode.path("competences")) {
+                        String title = compNode.path("title").asText();
+
+                        if ("KEIN THEMENKREIS ANGEGEBEN".equals(title)) {
+                            title = topic.getTitle();
+                        }
+
                         Competence competence = new Competence();
                         competence.setTitle(compNode.path("title").asText());
                         competence.setDescription(compNode.path("description").asText());

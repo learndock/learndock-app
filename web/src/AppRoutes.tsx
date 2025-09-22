@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from "react-router";
 import { useEffect, useState } from "react";
-import { getStorageValue, setStorageValue } from "./storage/StorageProvider";
+import { getStorageValue, setStorageValue } from "./core/StorageProvider";
 import Sidebar from "./components/custom/Sidebar/Sidebar";
 import Navbar from "./components/custom/Navbar/Navbar";
 import HomePage from "./pages/HomePage";
@@ -10,6 +10,7 @@ import CatalogDetailPage from "./pages/CatalogDetail.page";
 import TechnicalDashboard from "./pages/TechnicalDashboard.page";
 import CompetenceDetailPage from "./pages/ComptetenceDetail.page";
 import GenericErrorPage from "./pages/error/GenericErrorPage";
+import CompetenceOverviewPage from "./pages/CompetenceOverview.page";
 
 export default function AppRoutes() {
     const location = useLocation();
@@ -51,6 +52,7 @@ export default function AppRoutes() {
                         <Route path="/catalog/:catalogIdParam/:mode?" element={<CatalogDetailPage />} />
                         <Route path="/competence/:competenceIdParam" element={<CompetenceDetailPage />} />
                         <Route path="/competence/:competenceIdParam/:mode?" element={<CompetenceDetailPage />} />
+                        <Route path="/competence/" element={<CompetenceOverviewPage />} />
                     </Routes>
                 </main>
             </div>

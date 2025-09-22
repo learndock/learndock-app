@@ -3,6 +3,7 @@ import { useMutation, useQueryClient } from "react-query";
 import { addCatalog } from "../../../../../service/content/Catalog.service";
 import { Catalog } from "../../../../../types/Content.types";
 import { Modal } from "../../../../lib/Modals/Modal";
+import { useLang } from "../../../../../hooks/Language.hooks";
 
 interface AddCatalogModalProps {
   isOpen: boolean;
@@ -11,6 +12,7 @@ interface AddCatalogModalProps {
 
 export const AddCatalogModal = ({ isOpen, onClose }: AddCatalogModalProps) => {
   const queryClient = useQueryClient();
+  const lang = useLang();
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
@@ -32,10 +34,10 @@ export const AddCatalogModal = ({ isOpen, onClose }: AddCatalogModalProps) => {
 
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
-      <h2 className="text-xl font-semibold mb-4 text-text-primary">Add Catalog</h2>
+      <h2 className="text-xl font-semibold mb-4 text-text-primary">{lang("CATALOG_ADD_TITLE")}</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label className="block text-sm mb-1 text-text-secondary">Title</label>
+          <label className="block text-sm mb-1 text-text-secondary">{lang("COMMON_TITLE")}</label>
           <input
             type="text"
             value={title}
@@ -45,7 +47,7 @@ export const AddCatalogModal = ({ isOpen, onClose }: AddCatalogModalProps) => {
           />
         </div>
         <div>
-          <label className="block text-sm mb-1 text-text-secondary">Description</label>
+          <label className="block text-sm mb-1 text-text-secondary">{lang("COMMON_DESCRIPTION")}</label>
           <textarea
             value={description}
             onChange={(e) => setDescription(e.target.value)}
@@ -59,14 +61,14 @@ export const AddCatalogModal = ({ isOpen, onClose }: AddCatalogModalProps) => {
             onClick={onClose}
             className="px-4 py-2 rounded-lg bg-borders text-text-secondary hover:bg-cards transition"
           >
-            Cancel
+            {lang("COMMON_CANCEL")}
           </button>
           <button
             type="submit"
             disabled={mutation.isLoading}
             className="px-4 py-2 rounded-lg bg-accent text-background hover:opacity-90 transition disabled:opacity-50"
           >
-            {mutation.isLoading ? "Saving..." : "Save"}
+            {lang("COMMON_SAVE")}
           </button>
         </div>
       </form>

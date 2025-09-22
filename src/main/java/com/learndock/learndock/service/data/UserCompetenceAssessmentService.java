@@ -43,4 +43,11 @@ public class UserCompetenceAssessmentService {
         assessment.setAssessmentDate(new Date());
         return assessmentRepository.save(assessment);
     }
+
+    public double getSelfAssessmentRate(User user) {
+        long totalCompetences = competenceService.countAll();
+        if (totalCompetences == 0) return 0.0;
+        long assessedCompetences = assessmentRepository.countDistinctCompetenceByUser(user);
+        return (assessedCompetences * 100.0) / totalCompetences;
+    }
 }

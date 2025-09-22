@@ -1,13 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import { useQuery } from 'react-query';
-import SearchBar from '../../lib/Form/SearchBar.tsx';
-import { fetchSearchResults } from '../../../service/Search.service';
-import { SearchResult } from '../../../types/Search.types';
+import { useNavigate } from "react-router";
 import { MAX_SEARCH_RESULTS } from '../../../config/Search.config';
-import {useNavigate} from "react-router";
-import {useLang} from "../../../hooks/Language.hooks.ts";
-
+import { useLang } from "../../../hooks/Language.hooks.ts";
+import { useSearch } from '../../../service/Search.service';
+import { SearchResult } from '../../../types/Search.types';
+import SearchBar from '../../lib/Form/SearchBar.tsx';
 
 
 const NavbarSearch: React.FC = () => {
@@ -19,13 +17,7 @@ const NavbarSearch: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const { data: results = [] } = useQuery<SearchResult[]>({
-    queryKey: ['search', search],
-    queryFn: () => fetchSearchResults(search),
-    enabled: !!search,
-    staleTime: 1000 * 60,
-    keepPreviousData: true
-  });
+  const { data: results = [] } = useSearch(search);
 
   function handleNavigate(result: SearchResult) {
     navigate("/" + result.file);
@@ -49,6 +41,7 @@ const NavbarSearch: React.FC = () => {
       <SearchBar
         ref={inputRef}
         id="navbar-search"
+        autoComplete="off"
         value={search}
         onChange={(e) => {
           setSearch(e.target.value);

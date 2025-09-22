@@ -6,7 +6,7 @@ import { Tooltip } from "react-tooltip";
 import { useLang } from "../../../../hooks/Language.hooks";
 import { useUser } from "../../../../hooks/User.hooks";
 import { getCatalogForTopic } from "../../../../service/content/Topic.service";
-import { setStorageValue } from "../../../../storage/StorageProvider";
+import { setStorageValue } from "../../../../core/StorageProvider";
 import { Catalog, Topic } from "../../../../types/Content.types";
 import IconButton from "../../../lib/Buttons/IconButton";
 import LinkTopicModal from "../Topic/LinkTopicModal";

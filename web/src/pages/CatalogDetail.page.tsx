@@ -8,7 +8,7 @@ import { useLang } from "../hooks/Language.hooks";
 import { useUser } from "../hooks/User.hooks";
 import { getCatalog, updateCatalog } from "../service/content/Catalog.service";
 import { getQuestionSetsForCatalog } from "../service/content/QuestionSet.service";
-import { getStorageValue, setStorageValue } from "../storage/StorageProvider";
+import { getStorageValue, setStorageValue } from "../core/StorageProvider";
 import { validateNumberParam } from "../utils/URLParams.utils";
 
 export default function CatalogDetailPage() {

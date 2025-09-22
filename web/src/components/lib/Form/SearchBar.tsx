@@ -14,7 +14,7 @@ const SearchBar = React.forwardRef<HTMLInputElement, SearchBarProps>(
         <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-text-secondary pointer-events-none" />
         <input
           ref={ref}
-          type="text"
+          type="search"
           value={value}
           onChange={onChange}
           placeholder={placeholder}
