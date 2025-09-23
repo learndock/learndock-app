@@ -115,7 +115,7 @@ public class ImportCommands {
                         }
 
                         Competence competence = new Competence();
-                        competence.setTitle(compNode.path("title").asText());
+                        competence.setTitle(title);
                         competence.setDescription(compNode.path("description").asText());
                         competence.setCreatedAt(new Date());
                         competence.setUpdatedAt(new Date());
